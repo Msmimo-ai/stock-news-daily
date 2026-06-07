@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+<title>股市分析日报 · 2026-06-07</title>
+<style>
+  :root {
+    --bg:#f8fafc; --surface:#fff; --text:#1e293b; --text2:#64748b;
+    --border:#e2e8f0; --radius:16px; --shadow:0 2px 12px rgba(0,0,0,0.06);
+    --max:480px;
+  }
+  @media(prefers-color-scheme:dark) {
+    :root { --bg:#0f172a; --surface:#1e293b; --text:#f1f5f9; --text2:#94a3b8; --border:#334155; --shadow:0 2px 12px rgba(0,0,0,0.3); }
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);min-height:100vh;padding-bottom:48px}
+
+  .header{background:var(--surface);border-bottom:1px solid var(--border);padding:18px 16px 14px;position:sticky;top:0;z-index:100;backdrop-filter:blur(12px)}
+  .header-inner{max-width:var(--max);margin:0 auto;display:flex;justify-content:space-between;align-items:center}
+  .logo{font-size:19px;font-weight:800;letter-spacing:-.3px}
+  .logo span{background:linear-gradient(135deg,#10b981,#3b82f6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+  .header-right{text-align:right;font-size:12px;color:var(--text2);line-height:1.6}
+  .header-date{font-weight:700;font-size:13px;color:var(--text)}
+
+  .summary-bar{max-width:var(--max);margin:0 auto;padding:10px 16px 0;display:flex;gap:8px;font-size:12px}
+  .sum-chip{padding:3px 10px;border-radius:20px;font-weight:600}
+
+  main{max-width:var(--max);margin:0 auto;padding:14px 12px;display:flex;flex-direction:column;gap:12px}
+
+  .card{background:var(--surface);border-radius:var(--radius);border:1px solid var(--border);box-shadow:var(--shadow);overflow:hidden}
+  .card-signal-bar{height:3px}
+  .card-body{padding:13px 15px 15px}
+  .card-top{display:flex;gap:6px;align-items:center;margin-bottom:8px;flex-wrap:wrap}
+  .signal-badge{font-size:11px;font-weight:700;padding:3px 9px;border-radius:10px;white-space:nowrap}
+  .sector-badge{font-size:10px;font-weight:600;padding:2px 8px;border-radius:8px}
+  .ticker-row{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:8px}
+  .ticker{font-size:12px;font-weight:800;color:#3b82f6;background:#3b82f610;border:1px solid #3b82f630;padding:2px 8px;border-radius:6px;font-family:monospace}
+  .card-title{font-size:15px;font-weight:700;line-height:1.45;margin-bottom:9px;letter-spacing:-.2px}
+  .why-box{font-size:12px;color:var(--text2);background:var(--bg);border-left:3px solid #f59e0b;padding:6px 10px;border-radius:0 8px 8px 0;margin-bottom:10px;line-height:1.5}
+  .analyst-take{font-size:13px;color:var(--text2);line-height:1.7;margin-bottom:12px}
+  .card-footer{display:flex;justify-content:space-between;align-items:center;gap:8px}
+  .pub-meta{font-size:11px;color:var(--text2);flex-shrink:0}
+  .card-links{display:flex;gap:6px;flex-shrink:0}
+  .btn-zh{font-size:12px;font-weight:600;color:#fff;background:#3b82f6;padding:4px 10px;border-radius:8px;text-decoration:none;white-space:nowrap}
+  .btn-zh:hover{background:#2563eb}
+  .btn-src{font-size:11px;color:var(--text2);text-decoration:none;padding:4px 7px;border-radius:6px;border:1px solid var(--border);white-space:nowrap}
+  .btn-src:hover{color:var(--text)}
+
+  .disclaimer{max-width:var(--max);margin:20px auto 0;padding:12px 16px;font-size:11px;color:var(--text2);text-align:center;border-top:1px solid var(--border);line-height:1.7}
+</style>
+</head>
+<body>
+<header class="header">
+  <div class="header-inner">
+    <div class="logo">📈 <span>股市分析日报</span></div>
+    <div class="header-right">
+      <div class="header-date">2026-06-07</div>
+      <div>今日精选 10 篇</div>
+    </div>
+  </div>
+  <div class="summary-bar">
+    <span class="sum-chip" style="background:#10b98115;color:#10b981">📈 买入关注 4</span>
+    <span class="sum-chip" style="background:#ef444415;color:#ef4444">⚠️ 风险警示 3</span>
+    <span class="sum-chip" style="background:#f59e0b15;color:#f59e0b">🔭 宏观观察 3</span>
+  </div>
+</header>
+
+<main>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#10b981"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#10b98115;color:#10b981">📈 买入关注</span>
+          <span class="sector-badge" style="background:#8b5cf620;color:#8b5cf6">金融</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$BRK.A</span></div>
+        <h2 class="card-title">巴菲特投资8.5亿美元购买美国房地产</h2>
+        <div class="why-box">💡 巴菲特的投资行为通常被视为市场信号</div>
+        <p class="analyst-take">巴菲特的投资行为通常被视为市场信号，最近的8.5亿美元投资美国房地产公司表明他对美国房地产市场的信心。这种信号可能会对相关房地产股价产生积极影响，投资者可以考虑关注相关板块的投资机会。然而，需要注意的是，巴菲特的投资策略通常以长期持有为主，短期市场波动可能不会对他的投资决策产生直接影响。因此，投资者在做出投资决策时，应该综合考虑市场趋势、公司基本面和自己的风险承受能力。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Yahoo Finance · 2026-06-06</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://finance.yahoo.com/markets/stocks/articles/warren-buffett-berkshire-pours-8-104000948.html" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://finance.yahoo.com/markets/stocks/articles/warren-buffett-berkshire-pours-8-104000948.html" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#f59e0b"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#f59e0b15;color:#f59e0b">🔭 宏观观察</span>
+          <span class="sector-badge" style="background:#6b728020;color:#6b7280">宏观</span>
+        </div>
+        
+        <h2 class="card-title">南韩政府出台措施稳定韩元</h2>
+        <div class="why-box">💡 南韩政府的措施可能会影响韩元汇率</div>
+        <p class="analyst-take">南韩政府出台措施稳定韩元，表明政府对当前经济形势的关注。这种措施可能会对韩元汇率和相关金融市场产生影响，投资者需要关注韩元的走势和南韩经济的发展。同时，投资者也需要考虑全球经济的整体趋势和地缘政治因素对韩元和相关市场的影响。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Bloomberg Markets · 2026-06-07</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.bloomberg.com/news/articles/2026-06-07/south-korea-unveils-measures-to-stem-won-slide-curb-speculation" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.bloomberg.com/news/articles/2026-06-07/south-korea-unveils-measures-to-stem-won-slide-curb-speculation" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#f59e0b"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#f59e0b15;color:#f59e0b">🔭 宏观观察</span>
+          <span class="sector-badge" style="background:#6b728020;color:#6b7280">宏观</span>
+        </div>
+        
+        <h2 class="card-title">欧洲央行可能提高利率</h2>
+        <div class="why-box">💡 欧洲央行的利率决策将影响欧洲经济</div>
+        <p class="analyst-take">欧洲央行可能提高利率，这将对欧洲经济和金融市场产生重大影响。投资者需要关注利率的变化和欧洲央行的货币政策决策，考虑对相关资产价格和市场走势的影响。同时，投资者也需要考虑全球经济的整体趋势和地缘政治因素对欧洲经济和金融市场的影响。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Bloomberg Markets · 2026-06-06</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.bloomberg.com/news/articles/2026-06-06/ecb-steps-up-as-g7-s-lead-hawk-with-interest-rate-hike-primed" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.bloomberg.com/news/articles/2026-06-06/ecb-steps-up-as-g7-s-lead-hawk-with-interest-rate-hike-primed" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#10b981"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#10b98115;color:#10b981">📈 买入关注</span>
+          <span class="sector-badge" style="background:#3b82f620;color:#3b82f6">科技</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$MSFT</span></div>
+        <h2 class="card-title">OpenAI 计划推出超级应用</h2>
+        <div class="why-box">💡 OpenAI 的超级应用计划可能会推动相关股价</div>
+        <p class="analyst-take">OpenAI 计划推出超级应用，这可能会对相关科技股价产生积极影响。投资者可以考虑关注相关板块的投资机会，特别是那些与人工智能和科技创新相关的公司。然而，需要注意的是，市场竞争和技术发展的不确定性可能会对相关股价产生影响，投资者需要综合考虑市场趋势、公司基本面和自己的风险承受能力。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Bloomberg Markets · 2026-06-07</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.bloomberg.com/news/articles/2026-06-07/openai-plans-superapp-pivot-ahead-of-planned-ipo-ft-reports" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.bloomberg.com/news/articles/2026-06-07/openai-plans-superapp-pivot-ahead-of-planned-ipo-ft-reports" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#ef4444"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#ef444415;color:#ef4444">⚠️ 风险警示</span>
+          <span class="sector-badge" style="background:#6b728020;color:#6b7280">宏观</span>
+        </div>
+        
+        <h2 class="card-title">美国和伊朗的紧张关系可能影响全球经济</h2>
+        <div class="why-box">💡 地缘政治因素可能会影响全球经济</div>
+        <p class="analyst-take">美国和伊朗的紧张关系可能会对全球经济和金融市场产生重大影响，投资者需要关注地缘政治因素对市场的影响。这种情况可能会导致市场波动和不确定性增加，投资者需要综合考虑市场趋势、公司基本面和自己的风险承受能力，做出相应的投资决策。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Bloomberg Markets · 2026-06-07</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.bloomberg.com/news/articles/2026-06-07/us-and-iran-appear-far-from-peace-deal-100-days-since-war-began" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.bloomberg.com/news/articles/2026-06-07/us-and-iran-appear-far-from-peace-deal-100-days-since-war-began" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#ef4444"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#ef444415;color:#ef4444">⚠️ 风险警示</span>
+          <span class="sector-badge" style="background:#3b82f620;color:#3b82f6">科技</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$MU</span></div>
+        <h2 class="card-title">Micron 的机器人超级周期可能面临美联储加息风险</h2>
+        <div class="why-box">💡 美联储加息可能会影响 Micron 的股价</div>
+        <p class="analyst-take">Micron 的机器人超级周期可能面临美联储加息风险，投资者需要关注美联储的货币政策决策和对相关股价的影响。这种情况可能会导致市场波动和不确定性增加，投资者需要综合考虑市场趋势、公司基本面和自己的风险承受能力，做出相应的投资决策。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Seeking Alpha · 2026-06-07</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://seekingalpha.com/article/4912671-micron-robotics-supercycle-meets-fed-rate-hike-risks-rating-downgrade" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://seekingalpha.com/article/4912671-micron-robotics-supercycle-meets-fed-rate-hike-risks-rating-downgrade" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#10b981"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#10b98115;color:#10b981">📈 买入关注</span>
+          <span class="sector-badge" style="background:#3b82f620;color:#3b82f6">科技</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$ASE</span></div>
+        <h2 class="card-title">ASE Technology 的 LEAP 计划可能改变一切</h2>
+        <div class="why-box">💡 ASE Technology 的 LEAP 计划可能会推动相关股价</div>
+        <p class="analyst-take">ASE Technology 的 LEAP 计划可能会对相关股价产生积极影响，投资者可以考虑关注相关板块的投资机会。然而，需要注意的是，市场竞争和技术发展的不确定性可能会对相关股价产生影响，投资者需要综合考虑市场趋势、公司基本面和自己的风险承受能力。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Seeking Alpha · 2026-06-07</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://seekingalpha.com/article/4912674-ase-technology-no-longer-just-osat-leap-ramp-changes-everything" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://seekingalpha.com/article/4912674-ase-technology-no-longer-just-osat-leap-ramp-changes-everything" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#ef4444"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#ef444415;color:#ef4444">⚠️ 风险警示</span>
+          <span class="sector-badge" style="background:#ec489920;color:#ec4899">消费</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$AN</span></div>
+        <h2 class="card-title">AutoNation 的股价可能面临波动</h2>
+        <div class="why-box">💡 AutoNation 的股价可能面临波动</div>
+        <p class="analyst-take">AutoNation 的股价可能面临波动，投资者需要关注公司的基本面和市场趋势。这种情况可能会导致市场波动和不确定性增加，投资者需要综合考虑市场趋势、公司基本面和自己的风险承受能力，做出相应的投资决策。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Seeking Alpha · 2026-06-07</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://seekingalpha.com/article/4912673-autonation-the-ride-could-get-bumpy-but-that-doesnt-change-the-opportunity" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://seekingalpha.com/article/4912673-autonation-the-ride-could-get-bumpy-but-that-doesnt-change-the-opportunity" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#f59e0b"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#f59e0b15;color:#f59e0b">🔭 宏观观察</span>
+          <span class="sector-badge" style="background:#6b728020;color:#6b7280">宏观</span>
+        </div>
+        
+        <h2 class="card-title">两月市场反弹后，下一步是什么？</h2>
+        <div class="why-box">💡 市场趋势和经济指标可能会影响市场走势</div>
+        <p class="analyst-take">两月市场反弹后，下一步是什么？投资者需要关注市场趋势和经济指标，考虑对相关资产价格和市场走势的影响。这种情况可能会导致市场波动和不确定性增加，投资者需要综合考虑市场趋势、公司基本面和自己的风险承受能力，做出相应的投资决策。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Seeking Alpha · 2026-06-07</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://seekingalpha.com/article/4912675-2-month-market-rally-what-comes-next" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://seekingalpha.com/article/4912675-2-month-market-rally-what-comes-next" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#10b981"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#10b98115;color:#10b981">📈 买入关注</span>
+          <span class="sector-badge" style="background:#06b6d420;color:#06b6d4">工业</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$SPCE</span></div>
+        <h2 class="card-title">SpaceX 的 IPO 计划可能会改变航天行业</h2>
+        <div class="why-box">💡 SpaceX 的 IPO 计划可能会推动相关股价</div>
+        <p class="analyst-take">SpaceX 的 IPO 计划可能会对相关股价产生积极影响，投资者可以考虑关注相关板块的投资机会。然而，需要注意的是，市场竞争和技术发展的不确定性可能会对相关股价产生影响，投资者需要综合考虑市场趋势、公司基本面和自己的风险承受能力。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Seeking Alpha · 2026-06-07</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://seekingalpha.com/article/4912676-spacex-ipo-what-reusable-rockets-mean-for-investors" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://seekingalpha.com/article/4912676-spacex-ipo-what-reusable-rockets-mean-for-investors" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+</main>
+
+<div class="disclaimer">
+  ⚠️ 本站内容由 AI 自动生成，仅供参考，不构成任何投资建议。<br>
+  股市有风险，投资需谨慎，请结合自身判断做出决策。<br>
+  更新于 11:42 · 每天 06:00 自动更新
+</div>
+</body>
+</html>
