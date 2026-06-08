@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+<title>股市分析日报 · 2026-06-08</title>
+<style>
+  :root {
+    --bg:#f8fafc; --surface:#fff; --text:#1e293b; --text2:#64748b;
+    --border:#e2e8f0; --radius:16px; --shadow:0 2px 12px rgba(0,0,0,0.06);
+    --max:480px;
+  }
+  @media(prefers-color-scheme:dark) {
+    :root { --bg:#0f172a; --surface:#1e293b; --text:#f1f5f9; --text2:#94a3b8; --border:#334155; --shadow:0 2px 12px rgba(0,0,0,0.3); }
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);min-height:100vh;padding-bottom:48px}
+
+  .header{background:var(--surface);border-bottom:1px solid var(--border);padding:18px 16px 14px;position:sticky;top:0;z-index:100;backdrop-filter:blur(12px)}
+  .header-inner{max-width:var(--max);margin:0 auto;display:flex;justify-content:space-between;align-items:center}
+  .logo{font-size:19px;font-weight:800;letter-spacing:-.3px}
+  .logo span{background:linear-gradient(135deg,#10b981,#3b82f6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+  .header-right{text-align:right;font-size:12px;color:var(--text2);line-height:1.6}
+  .header-date{font-weight:700;font-size:13px;color:var(--text)}
+
+  .summary-bar{max-width:var(--max);margin:0 auto;padding:10px 16px 0;display:flex;gap:8px;font-size:12px}
+  .sum-chip{padding:3px 10px;border-radius:20px;font-weight:600}
+
+  main{max-width:var(--max);margin:0 auto;padding:14px 12px;display:flex;flex-direction:column;gap:12px}
+
+  .card{background:var(--surface);border-radius:var(--radius);border:1px solid var(--border);box-shadow:var(--shadow);overflow:hidden}
+  .card-signal-bar{height:3px}
+  .card-body{padding:13px 15px 15px}
+  .card-top{display:flex;gap:6px;align-items:center;margin-bottom:8px;flex-wrap:wrap}
+  .signal-badge{font-size:11px;font-weight:700;padding:3px 9px;border-radius:10px;white-space:nowrap}
+  .sector-badge{font-size:10px;font-weight:600;padding:2px 8px;border-radius:8px}
+  .ticker-row{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:8px}
+  .ticker{font-size:12px;font-weight:800;color:#3b82f6;background:#3b82f610;border:1px solid #3b82f630;padding:2px 8px;border-radius:6px;font-family:monospace}
+  .card-title{font-size:15px;font-weight:700;line-height:1.45;margin-bottom:9px;letter-spacing:-.2px}
+  .why-box{font-size:12px;color:var(--text2);background:var(--bg);border-left:3px solid #f59e0b;padding:6px 10px;border-radius:0 8px 8px 0;margin-bottom:10px;line-height:1.5}
+  .analyst-take{font-size:13px;color:var(--text2);line-height:1.7;margin-bottom:12px}
+  .card-footer{display:flex;justify-content:space-between;align-items:center;gap:8px}
+  .pub-meta{font-size:11px;color:var(--text2);flex-shrink:0}
+  .card-links{display:flex;gap:6px;flex-shrink:0}
+  .btn-zh{font-size:12px;font-weight:600;color:#fff;background:#3b82f6;padding:4px 10px;border-radius:8px;text-decoration:none;white-space:nowrap}
+  .btn-zh:hover{background:#2563eb}
+  .btn-src{font-size:11px;color:var(--text2);text-decoration:none;padding:4px 7px;border-radius:6px;border:1px solid var(--border);white-space:nowrap}
+  .btn-src:hover{color:var(--text)}
+
+  .disclaimer{max-width:var(--max);margin:20px auto 0;padding:12px 16px;font-size:11px;color:var(--text2);text-align:center;border-top:1px solid var(--border);line-height:1.7}
+</style>
+</head>
+<body>
+<header class="header">
+  <div class="header-inner">
+    <div class="logo">📈 <span>股市分析日报</span></div>
+    <div class="header-right">
+      <div class="header-date">2026-06-08</div>
+      <div>今日精选 10 篇</div>
+    </div>
+  </div>
+  <div class="summary-bar">
+    <span class="sum-chip" style="background:#10b98115;color:#10b981">📈 买入关注 4</span>
+    <span class="sum-chip" style="background:#ef444415;color:#ef4444">⚠️ 风险警示 4</span>
+    <span class="sum-chip" style="background:#f59e0b15;color:#f59e0b">🔭 宏观观察 2</span>
+  </div>
+</header>
+
+<main>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#10b981"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#10b98115;color:#10b981">📈 买入关注</span>
+          <span class="sector-badge" style="background:#3b82f620;color:#3b82f6">科技</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$MU</span></div>
+        <h2 class="card-title">美光股价大幅回升</h2>
+        <div class="why-box">💡 美光的长期供货协议改善了公司的盈利前景</div>
+        <p class="analyst-take">美光的股价大幅回升，表明投资者对公司的长期前景仍然乐观。随着半导体行业的持续增长，美光的业绩有望继续改善。建议投资者关注该公司的发展，并考虑买入其股票。</p>
+        <div class="card-footer">
+          <span class="pub-meta">MarketWatch · 2026-06-08</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.marketwatch.com/story/microns-stock-bounces-back-in-a-big-way-the-memory-trade-is-alive-and-well-3466929f?mod=mw_rss_topstories" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.marketwatch.com/story/microns-stock-bounces-back-in-a-big-way-the-memory-trade-is-alive-and-well-3466929f?mod=mw_rss_topstories" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#f59e0b"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#f59e0b15;color:#f59e0b">🔭 宏观观察</span>
+          <span class="sector-badge" style="background:#6b728020;color:#6b7280">宏观</span>
+        </div>
+        
+        <h2 class="card-title">摩根士丹利：科技股回调是健康的调整</h2>
+        <div class="why-box">💡 摩根士丹利的策略师对股市的看法</div>
+        <p class="analyst-take">摩根士丹利的首席策略师表示，科技股的回调是健康的调整，投资者应该继续看好股市的长期前景。随着经济的持续增长，股市有望继续上涨。</p>
+        <div class="card-footer">
+          <span class="pub-meta">MarketWatch · 2026-06-08</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.marketwatch.com/story/why-techs-record-pullback-is-just-a-healthy-reset-for-the-bull-market-according-to-morgan-stanleys-top-stock-market-strategist-a310f60a?mod=mw_rss_topstories" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.marketwatch.com/story/why-techs-record-pullback-is-just-a-healthy-reset-for-the-bull-market-according-to-morgan-stanleys-top-stock-market-strategist-a310f60a?mod=mw_rss_topstories" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#ef4444"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#ef444415;color:#ef4444">⚠️ 风险警示</span>
+          <span class="sector-badge" style="background:#6b728020;color:#6b7280">宏观</span>
+        </div>
+        
+        <h2 class="card-title">SpaceX IPO警告</h2>
+        <div class="why-box">💡 SpaceX的IPO可能会对股市产生负面影响</div>
+        <p class="analyst-take">一位大科技投资者的警告，SpaceX的IPO可能会对股市产生负面影响，投资者应该谨慎对待这一事件。</p>
+        <div class="card-footer">
+          <span class="pub-meta">MarketWatch · 2026-06-08</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.marketwatch.com/story/this-big-tech-investors-warning-for-traders-watch-out-for-the-spacex-ipo-cd651485?mod=mw_rss_topstories" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.marketwatch.com/story/this-big-tech-investors-warning-for-traders-watch-out-for-the-spacex-ipo-cd651485?mod=mw_rss_topstories" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#10b981"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#10b98115;color:#10b981">📈 买入关注</span>
+          <span class="sector-badge" style="background:#6b728020;color:#6b7280">宏观</span>
+        </div>
+        
+        <h2 class="card-title">低波动性股票可以保护投资组合</h2>
+        <div class="why-box">💡 低波动性股票可以保护投资组合</div>
+        <p class="analyst-take">低波动性股票可以帮助投资者在股市波动时保护其投资组合，建议投资者考虑买入这些股票。</p>
+        <div class="card-footer">
+          <span class="pub-meta">MarketWatch · 2026-06-08</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.marketwatch.com/story/the-u-s-stock-market-is-facing-historic-downside-risk-these-10-low-volatility-stocks-can-protect-your-portfolio-088a2189?mod=mw_rss_topstories" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.marketwatch.com/story/the-u-s-stock-market-is-facing-historic-downside-risk-these-10-low-volatility-stocks-can-protect-your-portfolio-088a2189?mod=mw_rss_topstories" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#10b981"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#10b98115;color:#10b981">📈 买入关注</span>
+          <span class="sector-badge" style="background:#3b82f620;color:#3b82f6">科技</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$ASML</span></div>
+        <h2 class="card-title">埃隆·马斯克称ASML是欧洲最伟大的公司</h2>
+        <div class="why-box">💡 ASML的技术领先地位</div>
+        <p class="analyst-take">埃隆·马斯克的评论表明ASML的技术领先地位，公司的业绩有望继续改善。建议投资者关注该公司的发展，并考虑买入其股票。</p>
+        <div class="card-footer">
+          <span class="pub-meta">MarketWatch · 2026-06-08</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.marketwatch.com/story/why-elon-musk-says-asml-is-the-greatest-company-in-europe-a353f33a?mod=mw_rss_topstories" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.marketwatch.com/story/why-elon-musk-says-asml-is-the-greatest-company-in-europe-a353f33a?mod=mw_rss_topstories" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#ef4444"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#ef444415;color:#ef4444">⚠️ 风险警示</span>
+          <span class="sector-badge" style="background:#6b728020;color:#6b7280">宏观</span>
+        </div>
+        
+        <h2 class="card-title">投资者逃离科技股</h2>
+        <div class="why-box">💡 投资者逃离科技股</div>
+        <p class="analyst-take">投资者正在逃离科技股，转向其他板块，表明投资者对科技股的信心下降。建议投资者谨慎对待科技股。</p>
+        <div class="card-footer">
+          <span class="pub-meta">MarketWatch · 2026-06-08</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.marketwatch.com/story/these-are-the-markets-new-hot-stocks-as-investors-flee-from-tech-826096c2?mod=mw_rss_topstories" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.marketwatch.com/story/these-are-the-markets-new-hot-stocks-as-investors-flee-from-tech-826096c2?mod=mw_rss_topstories" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#f59e0b"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#f59e0b15;color:#f59e0b">🔭 宏观观察</span>
+          <span class="sector-badge" style="background:#f59e0b20;color:#f59e0b">能源</span>
+        </div>
+        
+        <h2 class="card-title">油价大幅波动</h2>
+        <div class="why-box">💡 油价的大幅波动</div>
+        <p class="analyst-take">油价的大幅波动表明全球能源市场的不确定性，投资者应该关注能源股的表现。</p>
+        <div class="card-footer">
+          <span class="pub-meta">MarketWatch · 2026-06-08</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.marketwatch.com/story/global-oil-prices-erase-most-gains-after-topping-98-a-barrel-as-iran-announces-end-of-current-attacks-after-exchanging-fire-with-israel-6e433c90?mod=mw_rss_topstories" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.marketwatch.com/story/global-oil-prices-erase-most-gains-after-topping-98-a-barrel-as-iran-announces-end-of-current-attacks-after-exchanging-fire-with-israel-6e433c90?mod=mw_rss_topstories" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#ef4444"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#ef444415;color:#ef4444">⚠️ 风险警示</span>
+          <span class="sector-badge" style="background:#ec489920;color:#ec4899">消费</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$CMG</span></div>
+        <h2 class="card-title">Chipotle Mexican Grill估值过高</h2>
+        <div class="why-box">💡 Chipotle Mexican Grill的估值过高</div>
+        <p class="analyst-take">Chipotle Mexican Grill的估值过高，公司的业绩增长不足以支撑当前的股价。建议投资者谨慎对待该公司的股票。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Seeking Alpha · 2026-06-08</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://seekingalpha.com/article/4912863-chipotle-mexican-grill-too-expensive-in-light-of-weak-comps-growth-and-macro-headwinds?source=feed_all_articles" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://seekingalpha.com/article/4912863-chipotle-mexican-grill-too-expensive-in-light-of-weak-comps-growth-and-macro-headwinds?source=feed_all_articles" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#ef4444"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#ef444415;color:#ef4444">⚠️ 风险警示</span>
+          <span class="sector-badge" style="background:#3b82f620;color:#3b82f6">科技</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$MRVL</span></div>
+        <h2 class="card-title">Marvell需要完美的执行</h2>
+        <div class="why-box">💡 Marvell的估值过高</div>
+        <p class="analyst-take">Marvell的估值过高，公司需要完美的执行才能达到投资者的预期。建议投资者谨慎对待该公司的股票。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Seeking Alpha · 2026-06-08</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://seekingalpha.com/article/4912843-marvell-needs-flawless-execution-to-justify-such-high-expectations?source=feed_all_articles" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://seekingalpha.com/article/4912843-marvell-needs-flawless-execution-to-justify-such-high-expectations?source=feed_all_articles" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#10b981"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#10b98115;color:#10b981">📈 买入关注</span>
+          <span class="sector-badge" style="background:#10b98120;color:#10b981">医疗</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$JNJ</span></div>
+        <h2 class="card-title">Johnson & Johnson收购Firefly Bio</h2>
+        <div class="why-box">💡 Johnson & Johnson的收购行为</div>
+        <p class="analyst-take">Johnson & Johnson的收购行为表明公司的战略扩张，建议投资者关注该公司的发展，并考虑买入其股票。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Yahoo Finance · 2026-06-08</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://finance.yahoo.com/sectors/healthcare/articles/johnson-johnson-acquires-firefly-bio-133314522.html" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://finance.yahoo.com/sectors/healthcare/articles/johnson-johnson-acquires-firefly-bio-133314522.html" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+</main>
+
+<div class="disclaimer">
+  ⚠️ 本站内容由 AI 自动生成，仅供参考，不构成任何投资建议。<br>
+  股市有风险，投资需谨慎，请结合自身判断做出决策。<br>
+  更新于 13:58 · 每天 06:00 自动更新
+</div>
+</body>
+</html>
