@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+<title>股市分析日报 · 2026-06-09</title>
+<style>
+  :root {
+    --bg:#f8fafc; --surface:#fff; --text:#1e293b; --text2:#64748b;
+    --border:#e2e8f0; --radius:16px; --shadow:0 2px 12px rgba(0,0,0,0.06);
+    --max:480px;
+  }
+  @media(prefers-color-scheme:dark) {
+    :root { --bg:#0f172a; --surface:#1e293b; --text:#f1f5f9; --text2:#94a3b8; --border:#334155; --shadow:0 2px 12px rgba(0,0,0,0.3); }
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);min-height:100vh;padding-bottom:48px}
+
+  .header{background:var(--surface);border-bottom:1px solid var(--border);padding:18px 16px 14px;position:sticky;top:0;z-index:100;backdrop-filter:blur(12px)}
+  .header-inner{max-width:var(--max);margin:0 auto;display:flex;justify-content:space-between;align-items:center}
+  .logo{font-size:19px;font-weight:800;letter-spacing:-.3px}
+  .logo span{background:linear-gradient(135deg,#10b981,#3b82f6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+  .header-right{text-align:right;font-size:12px;color:var(--text2);line-height:1.6}
+  .header-date{font-weight:700;font-size:13px;color:var(--text)}
+
+  .summary-bar{max-width:var(--max);margin:0 auto;padding:10px 16px 0;display:flex;gap:8px;font-size:12px}
+  .sum-chip{padding:3px 10px;border-radius:20px;font-weight:600}
+
+  main{max-width:var(--max);margin:0 auto;padding:14px 12px;display:flex;flex-direction:column;gap:12px}
+
+  .card{background:var(--surface);border-radius:var(--radius);border:1px solid var(--border);box-shadow:var(--shadow);overflow:hidden}
+  .card-signal-bar{height:3px}
+  .card-body{padding:13px 15px 15px}
+  .card-top{display:flex;gap:6px;align-items:center;margin-bottom:8px;flex-wrap:wrap}
+  .signal-badge{font-size:11px;font-weight:700;padding:3px 9px;border-radius:10px;white-space:nowrap}
+  .sector-badge{font-size:10px;font-weight:600;padding:2px 8px;border-radius:8px}
+  .ticker-row{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:8px}
+  .ticker{font-size:12px;font-weight:800;color:#3b82f6;background:#3b82f610;border:1px solid #3b82f630;padding:2px 8px;border-radius:6px;font-family:monospace}
+  .card-title{font-size:15px;font-weight:700;line-height:1.45;margin-bottom:9px;letter-spacing:-.2px}
+  .why-box{font-size:12px;color:var(--text2);background:var(--bg);border-left:3px solid #f59e0b;padding:6px 10px;border-radius:0 8px 8px 0;margin-bottom:10px;line-height:1.5}
+  .analyst-take{font-size:13px;color:var(--text2);line-height:1.7;margin-bottom:12px}
+  .card-footer{display:flex;justify-content:space-between;align-items:center;gap:8px}
+  .pub-meta{font-size:11px;color:var(--text2);flex-shrink:0}
+  .card-links{display:flex;gap:6px;flex-shrink:0}
+  .btn-zh{font-size:12px;font-weight:600;color:#fff;background:#3b82f6;padding:4px 10px;border-radius:8px;text-decoration:none;white-space:nowrap}
+  .btn-zh:hover{background:#2563eb}
+  .btn-src{font-size:11px;color:var(--text2);text-decoration:none;padding:4px 7px;border-radius:6px;border:1px solid var(--border);white-space:nowrap}
+  .btn-src:hover{color:var(--text)}
+
+  .disclaimer{max-width:var(--max);margin:20px auto 0;padding:12px 16px;font-size:11px;color:var(--text2);text-align:center;border-top:1px solid var(--border);line-height:1.7}
+</style>
+</head>
+<body>
+<header class="header">
+  <div class="header-inner">
+    <div class="logo">📈 <span>股市分析日报</span></div>
+    <div class="header-right">
+      <div class="header-date">2026-06-09</div>
+      <div>今日精选 10 篇</div>
+    </div>
+  </div>
+  <div class="summary-bar">
+    <span class="sum-chip" style="background:#10b98115;color:#10b981">📈 买入关注 4</span>
+    <span class="sum-chip" style="background:#ef444415;color:#ef4444">⚠️ 风险警示 1</span>
+    <span class="sum-chip" style="background:#f59e0b15;color:#f59e0b">🔭 宏观观察 5</span>
+  </div>
+</header>
+
+<main>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#f59e0b"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#f59e0b15;color:#f59e0b">🔭 宏观观察</span>
+          <span class="sector-badge" style="background:#6b728020;color:#6b7280">宏观</span>
+        </div>
+        
+        <h2 class="card-title">欧洲央行可能加息</h2>
+        <div class="why-box">💡 欧洲央行加息可能影响全球市场</div>
+        <p class="analyst-take">欧洲央行可能加息，这将是近三年来的首次加息。这种举动可能会对全球金融市场产生影响，尤其是对欧洲股市和货币。投资者需要密切关注这一事件的发展，并考虑其对投资组合的潜在影响。建议投资者保持谨慎，关注市场的反应，并根据需要调整投资策略。</p>
+        <div class="card-footer">
+          <span class="pub-meta">MarketWatch · 2026-06-09</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.marketwatch.com/story/markets-are-pricing-in-a-rate-hike-by-the-european-central-bank-and-that-could-be-a-mistake-in-the-making-b99771ca?mod=mw_rss_topstories" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.marketwatch.com/story/markets-are-pricing-in-a-rate-hike-by-the-european-central-bank-and-that-could-be-a-mistake-in-the-making-b99771ca?mod=mw_rss_topstories" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#10b981"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#10b98115;color:#10b981">📈 买入关注</span>
+          <span class="sector-badge" style="background:#3b82f620;color:#3b82f6">科技</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$ORCL</span></div>
+        <h2 class="card-title">Oracle 股价飙升</h2>
+        <div class="why-box">💡 Oracle 股价受 AI 热潮驱动</div>
+        <p class="analyst-take">Oracle 的股价近期飙升，主要受人工智能（AI）热潮的驱动。然而，投资者需要关注公司的财报表现，特别是其数据中心建设和 AI 业务的进展。若公司能够交出令人满意的财报，股价可能继续上涨。建议投资者密切关注公司的发展，并考虑买入机会。</p>
+        <div class="card-footer">
+          <span class="pub-meta">MarketWatch · 2026-06-09</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.marketwatch.com/story/oracles-stock-has-surged-on-ai-hype-now-it-has-to-deliver-the-earnings-to-match-3b56592b?mod=mw_rss_topstories" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.marketwatch.com/story/oracles-stock-has-surged-on-ai-hype-now-it-has-to-deliver-the-earnings-to-match-3b56592b?mod=mw_rss_topstories" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#ef4444"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#ef444415;color:#ef4444">⚠️ 风险警示</span>
+          <span class="sector-badge" style="background:#6b728020;color:#6b7280">宏观</span>
+        </div>
+        
+        <h2 class="card-title">韩国股市波动</h2>
+        <div class="why-box">💡 韩国股市波动可能带来风险</div>
+        <p class="analyst-take">韩国股市近期出现了大幅波动，主要是由于散户投资者的过度热情和使用杠杆产品。这种情况可能会导致市场的不稳定，投资者需要谨慎对待。建议投资者保持警惕，关注市场的走势，并考虑减仓或避险。</p>
+        <div class="card-footer">
+          <span class="pub-meta">MarketWatch · 2026-06-09</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.marketwatch.com/story/a-massive-16-market-swing-just-rocked-south-korea-over-24-hours-the-retail-ants-holding-the-wheel-are-driving-dangerously-8799c198?mod=mw_rss_topstories" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.marketwatch.com/story/a-massive-16-market-swing-just-rocked-south-korea-over-24-hours-the-retail-ants-holding-the-wheel-are-driving-dangerously-8799c198?mod=mw_rss_topstories" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#f59e0b"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#f59e0b15;color:#f59e0b">🔭 宏观观察</span>
+          <span class="sector-badge" style="background:#6b728020;color:#6b7280">宏观</span>
+        </div>
+        
+        <h2 class="card-title">美国家庭财务担忧加剧</h2>
+        <div class="why-box">💡 美国家庭财务担忧加剧</div>
+        <p class="analyst-take">美国家庭的财务担忧加剧，主要是由于通胀和经济不确定性的影响。这种情况可能会对消费者支出和经济增长产生负面影响。投资者需要关注这一趋势，并考虑其对投资组合的潜在影响。建议投资者保持谨慎，关注经济数据，并根据需要调整投资策略。</p>
+        <div class="card-footer">
+          <span class="pub-meta">CNBC Markets · 2026-06-08</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.cnbc.com/2026/06/08/household-financial-worries-at-highest-level-since-2022-new-york-fed-says.html" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.cnbc.com/2026/06/08/household-financial-worries-at-highest-level-since-2022-new-york-fed-says.html" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#10b981"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#10b98115;color:#10b981">📈 买入关注</span>
+          <span class="sector-badge" style="background:#3b82f620;color:#3b82f6">科技</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$GOOGL</span></div>
+        <h2 class="card-title">SpaceX 和 Google 计算协议</h2>
+        <div class="why-box">💡 SpaceX 和 Google 计算协议</div>
+        <p class="analyst-take">SpaceX 和 Google 的计算协议可能会为两家公司带来新的增长机会。投资者需要关注这一合作的进展，并考虑其对公司业绩的潜在影响。建议投资者密切关注公司的发展，并考虑买入机会。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Yahoo Finance · 2026-06-09</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://finance.yahoo.com/markets/stocks/article/spacex-google-compute-deal-raises-eyebrows-ahead-of-ipo-120522033.html" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://finance.yahoo.com/markets/stocks/article/spacex-google-compute-deal-raises-eyebrows-ahead-of-ipo-120522033.html" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#10b981"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#10b98115;color:#10b981">📈 买入关注</span>
+          <span class="sector-badge" style="background:#3b82f620;color:#3b82f6">科技</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$ASTR</span></div>
+        <h2 class="card-title">Astera Labs 仍然是一个早期 AI 故事</h2>
+        <div class="why-box">💡 Astera Labs 仍然是一个早期 AI 故事</div>
+        <p class="analyst-take">Astera Labs 仍然是一个早期 AI 故事，公司的发展前景广阔。投资者需要关注公司的财报表现和产品开发进展。若公司能够交出令人满意的财报，股价可能继续上涨。建议投资者密切关注公司的发展，并考虑买入机会。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Seeking Alpha · 2026-06-09</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://seekingalpha.com/article/4913221-astera-labs-still-an-early-ai-story" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://seekingalpha.com/article/4913221-astera-labs-still-an-early-ai-story" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#f59e0b"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#f59e0b15;color:#f59e0b">🔭 宏观观察</span>
+          <span class="sector-badge" style="background:#6b728020;color:#6b7280">宏观</span>
+        </div>
+        
+        <h2 class="card-title">BNP 预测美联储将在 12 月开始加息</h2>
+        <div class="why-box">💡 BNP 预测美联储将在 12 月开始加息</div>
+        <p class="analyst-take">BNP 预测美联储将在 12 月开始加息，这将是美联储近期的首次加息。这种举动可能会对全球金融市场产生影响，尤其是对美国股市和债券市场。投资者需要密切关注这一事件的发展，并考虑其对投资组合的潜在影响。建议投资者保持谨慎，关注市场的反应，并根据需要调整投资策略。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Bloomberg Markets · 2026-06-09</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.bloomberg.com/news/videos/2026-06-09/bnp-sees-three-fed-rate-hikes-starting-in-december-video" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.bloomberg.com/news/videos/2026-06-09/bnp-sees-three-fed-rate-hikes-starting-in-december-video" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#f59e0b"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#f59e0b15;color:#f59e0b">🔭 宏观观察</span>
+          <span class="sector-badge" style="background:#6b728020;color:#6b7280">宏观</span>
+        </div>
+        
+        <h2 class="card-title">美国小企业乐观度下降</h2>
+        <div class="why-box">💡 美国小企业乐观度下降</div>
+        <p class="analyst-take">美国小企业的乐观度下降，主要是由于经济不确定性和通胀的影响。这种情况可能会对经济增长和就业市场产生负面影响。投资者需要关注这一趋势，并考虑其对投资组合的潜在影响。建议投资者保持谨慎，关注经济数据，并根据需要调整投资策略。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Bloomberg Markets · 2026-06-09</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.bloomberg.com/news/articles/2026-06-09/us-small-business-optimism-falls-to-lowest-since-october-2024" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.bloomberg.com/news/articles/2026-06-09/us-small-business-optimism-falls-to-lowest-since-october-2024" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#10b981"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#10b98115;color:#10b981">📈 买入关注</span>
+          <span class="sector-badge" style="background:#3b82f620;color:#3b82f6">科技</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$SATL</span></div>
+        <h2 class="card-title">Satellogic 股价大涨</h2>
+        <div class="why-box">💡 Satellogic 股价大涨</div>
+        <p class="analyst-take">Satellogic 股价大涨，主要是由于公司在卫星技术领域的发展前景广阔。投资者需要关注公司的财报表现和产品开发进展。若公司能够交出令人满意的财报，股价可能继续上涨。建议投资者密切关注公司的发展，并考虑买入机会。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Bloomberg Markets · 2026-06-09</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.bloomberg.com/news/features/2026-06-09/world-s-hottest-space-stock-posts-rally-that-dwarfs-all-rivals" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.bloomberg.com/news/features/2026-06-09/world-s-hottest-space-stock-posts-rally-that-dwarfs-all-rivals" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#f59e0b"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#f59e0b15;color:#f59e0b">🔭 宏观观察</span>
+          <span class="sector-badge" style="background:#8b5cf620;color:#8b5cf6">金融</span>
+        </div>
+        
+        <h2 class="card-title">欧盟银行业并购理由增加</h2>
+        <div class="why-box">💡 欧盟银行业并购理由增加</div>
+        <p class="analyst-take">欧盟银行业并购理由增加，主要是由于银行业的整合和重组。这种情况可能会对欧盟银行业产生积极影响，投资者需要关注这一趋势，并考虑其对投资组合的潜在影响。建议投资者保持谨慎，关注市场的反应，并根据需要调整投资策略。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Bloomberg Markets · 2026-06-09</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.bloomberg.com/news/articles/2026-06-09/goldman-sachs-says-eu-bank-m-a-rationale-is-rising-with-profits" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.bloomberg.com/news/articles/2026-06-09/goldman-sachs-says-eu-bank-m-a-rationale-is-rising-with-profits" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+</main>
+
+<div class="disclaimer">
+  ⚠️ 本站内容由 AI 自动生成，仅供参考，不构成任何投资建议。<br>
+  股市有风险，投资需谨慎，请结合自身判断做出决策。<br>
+  更新于 12:31 · 每天 06:00 自动更新
+</div>
+</body>
+</html>
