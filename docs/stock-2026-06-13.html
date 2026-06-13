@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+<title>股市分析日报 · 2026-06-13</title>
+<style>
+  :root {
+    --bg:#f8fafc; --surface:#fff; --text:#1e293b; --text2:#64748b;
+    --border:#e2e8f0; --radius:16px; --shadow:0 2px 12px rgba(0,0,0,0.06);
+    --max:480px;
+  }
+  @media(prefers-color-scheme:dark) {
+    :root { --bg:#0f172a; --surface:#1e293b; --text:#f1f5f9; --text2:#94a3b8; --border:#334155; --shadow:0 2px 12px rgba(0,0,0,0.3); }
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);min-height:100vh;padding-bottom:48px}
+
+  .header{background:var(--surface);border-bottom:1px solid var(--border);padding:18px 16px 14px;position:sticky;top:0;z-index:100;backdrop-filter:blur(12px)}
+  .header-inner{max-width:var(--max);margin:0 auto;display:flex;justify-content:space-between;align-items:center}
+  .logo{font-size:19px;font-weight:800;letter-spacing:-.3px}
+  .logo span{background:linear-gradient(135deg,#10b981,#3b82f6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+  .header-right{text-align:right;font-size:12px;color:var(--text2);line-height:1.6}
+  .header-date{font-weight:700;font-size:13px;color:var(--text)}
+
+  .summary-bar{max-width:var(--max);margin:0 auto;padding:10px 16px 0;display:flex;gap:8px;font-size:12px}
+  .sum-chip{padding:3px 10px;border-radius:20px;font-weight:600}
+
+  main{max-width:var(--max);margin:0 auto;padding:14px 12px;display:flex;flex-direction:column;gap:12px}
+
+  .card{background:var(--surface);border-radius:var(--radius);border:1px solid var(--border);box-shadow:var(--shadow);overflow:hidden}
+  .card-signal-bar{height:3px}
+  .card-body{padding:13px 15px 15px}
+  .card-top{display:flex;gap:6px;align-items:center;margin-bottom:8px;flex-wrap:wrap}
+  .signal-badge{font-size:11px;font-weight:700;padding:3px 9px;border-radius:10px;white-space:nowrap}
+  .sector-badge{font-size:10px;font-weight:600;padding:2px 8px;border-radius:8px}
+  .ticker-row{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:8px}
+  .ticker{font-size:12px;font-weight:800;color:#3b82f6;background:#3b82f610;border:1px solid #3b82f630;padding:2px 8px;border-radius:6px;font-family:monospace}
+  .card-title{font-size:15px;font-weight:700;line-height:1.45;margin-bottom:9px;letter-spacing:-.2px}
+  .why-box{font-size:12px;color:var(--text2);background:var(--bg);border-left:3px solid #f59e0b;padding:6px 10px;border-radius:0 8px 8px 0;margin-bottom:10px;line-height:1.5}
+  .analyst-take{font-size:13px;color:var(--text2);line-height:1.7;margin-bottom:12px}
+  .card-footer{display:flex;justify-content:space-between;align-items:center;gap:8px}
+  .pub-meta{font-size:11px;color:var(--text2);flex-shrink:0}
+  .card-links{display:flex;gap:6px;flex-shrink:0}
+  .btn-zh{font-size:12px;font-weight:600;color:#fff;background:#3b82f6;padding:4px 10px;border-radius:8px;text-decoration:none;white-space:nowrap}
+  .btn-zh:hover{background:#2563eb}
+  .btn-src{font-size:11px;color:var(--text2);text-decoration:none;padding:4px 7px;border-radius:6px;border:1px solid var(--border);white-space:nowrap}
+  .btn-src:hover{color:var(--text)}
+
+  .disclaimer{max-width:var(--max);margin:20px auto 0;padding:12px 16px;font-size:11px;color:var(--text2);text-align:center;border-top:1px solid var(--border);line-height:1.7}
+</style>
+</head>
+<body>
+<header class="header">
+  <div class="header-inner">
+    <div class="logo">📈 <span>股市分析日报</span></div>
+    <div class="header-right">
+      <div class="header-date">2026-06-13</div>
+      <div>今日精选 10 篇</div>
+    </div>
+  </div>
+  <div class="summary-bar">
+    <span class="sum-chip" style="background:#10b98115;color:#10b981">📈 买入关注 4</span>
+    <span class="sum-chip" style="background:#ef444415;color:#ef4444">⚠️ 风险警示 2</span>
+    <span class="sum-chip" style="background:#f59e0b15;color:#f59e0b">🔭 宏观观察 4</span>
+  </div>
+</header>
+
+<main>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#f59e0b"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#f59e0b15;color:#f59e0b">🔭 宏观观察</span>
+          <span class="sector-badge" style="background:#6b728020;color:#6b7280">宏观</span>
+        </div>
+        
+        <h2 class="card-title">欧洲央行加息</h2>
+        <div class="why-box">💡 欧洲央行加息对全球经济有重要影响</div>
+        <p class="analyst-take">欧洲央行加息意味着欧洲经济正在经历通胀压力，投资者需要关注利率变化对股票市场的影响。当前的加息可能会导致欧洲股市短期波动，但长期来看，稳定的经济增长和适度的通胀将有利于股票市场。建议投资者保持谨慎，关注经济数据和央行政策的变化。</p>
+        <div class="card-footer">
+          <span class="pub-meta">CNBC Markets · 2026-06-11</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.cnbc.com/2026/06/11/ecb-hikes-interest-rates.html" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.cnbc.com/2026/06/11/ecb-hikes-interest-rates.html" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#10b981"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#10b98115;color:#10b981">📈 买入关注</span>
+          <span class="sector-badge" style="background:#3b82f620;color:#3b82f6">科技</span>
+        </div>
+        
+        <h2 class="card-title">SpaceX 首次公开募股</h2>
+        <div class="why-box">💡 SpaceX 是太空技术领域的领军者</div>
+        <p class="analyst-take">SpaceX 首次公开募股是科技行业的一大事件，表明该公司的发展潜力和投资价值。作为一家领先的太空技术公司，SpaceX 的 IPO 将吸引大量投资者的关注。建议投资者密切关注该公司的发展和行业趋势，考虑买入其股票。</p>
+        <div class="card-footer">
+          <span class="pub-meta">CNBC Markets · 2026-06-12</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.cnbc.com/2026/06/12/how-elon-musk-nailed-the-spacex-ipo-im-not-sure-that-this-could-have-gone-much-better" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.cnbc.com/2026/06/12/how-elon-musk-nailed-the-spacex-ipo-im-not-sure-that-this-could-have-gone-much-better" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#ef4444"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#ef444415;color:#ef4444">⚠️ 风险警示</span>
+          <span class="sector-badge" style="background:#3b82f620;color:#3b82f6">科技</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$ORCL</span></div>
+        <h2 class="card-title">Oracle 股价大跌</h2>
+        <div class="why-box">💡 Oracle 股价大跌需要关注</div>
+        <p class="analyst-take">Oracle 股价大跌可能是由于公司的财报不佳或市场预期过高。投资者需要密切关注公司的财务状况和行业趋势，考虑减仓或观望。同时，需要分析公司的根本面和竞争优势，判断是否是买入机会。</p>
+        <div class="card-footer">
+          <span class="pub-meta">CNBC Markets · 2026-06-11</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.cnbc.com/2026/06/11/oracle-shares-tumble-11percent-on-increased-capital-raise-cash-concerns.html" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.cnbc.com/2026/06/11/oracle-shares-tumble-11percent-on-increased-capital-raise-cash-concerns.html" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#f59e0b"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#f59e0b15;color:#f59e0b">🔭 宏观观察</span>
+          <span class="sector-badge" style="background:#6b728020;color:#6b7280">宏观</span>
+        </div>
+        
+        <h2 class="card-title">全球股市走势</h2>
+        <div class="why-box">💡 全球股市走势需要关注</div>
+        <p class="analyst-take">全球股市走势受到多种因素的影响，包括经济数据、央行政策和地缘政治事件。投资者需要关注这些因素的变化，调整投资策略。当前，全球股市仍然存在不确定性，投资者需要保持谨慎和耐心。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Yahoo Finance · 2026-06-12</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://finance.yahoo.com/news/global-equity-funds-draw-third-095322839.html" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://finance.yahoo.com/news/global-equity-funds-draw-third-095322839.html" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#f59e0b"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#f59e0b15;color:#f59e0b">🔭 宏观观察</span>
+          <span class="sector-badge" style="background:#6b728020;color:#6b7280">宏观</span>
+        </div>
+        
+        <h2 class="card-title">英國經濟收縮</h2>
+        <div class="why-box">💡 英國經濟收縮需要关注</div>
+        <p class="analyst-take">英國經濟收縮可能是由于多种因素的综合影响，包括通胀、利率和地缘政治事件。投资者需要关注这些因素的变化，调整投资策略。当前，英國經濟仍然存在不确定性，投资者需要保持谨慎和耐心。</p>
+        <div class="card-footer">
+          <span class="pub-meta">CNBC Markets · 2026-06-12</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.cnbc.com/2026/06/12/uk-gdp-april-iran-war-growth.html" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.cnbc.com/2026/06/12/uk-gdp-april-iran-war-growth.html" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#10b981"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#10b98115;color:#10b981">📈 买入关注</span>
+          <span class="sector-badge" style="background:#ec489920;color:#ec4899">消费</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$1929.HK</span></div>
+        <h2 class="card-title">Chow Tai Fook 股价大涨</h2>
+        <div class="why-box">💡 Chow Tai Fook 股价大涨需要关注</div>
+        <p class="analyst-take">Chow Tai Fook 股价大涨可能是由于公司的财报佳或市场预期过高。投资者需要密切关注公司的财务状况和行业趋势，考虑买入其股票。同时，需要分析公司的根本面和竞争优势，判断是否是长期投资机会。</p>
+        <div class="card-footer">
+          <span class="pub-meta">CNBC Markets · 2026-06-12</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.cnbc.com/2026/06/12/chow-tai-fooks-shares-rise-15percent-as-higher-gold-price-boosts-profits.html" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.cnbc.com/2026/06/12/chow-tai-fooks-shares-rise-15percent-as-higher-gold-price-boosts-profits.html" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#10b981"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#10b98115;color:#10b981">📈 买入关注</span>
+          <span class="sector-badge" style="background:#f59e0b20;color:#f59e0b">能源</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$RRC</span></div>
+        <h2 class="card-title">Range Resources 股价走势</h2>
+        <div class="why-box">💡 Range Resources 股价走势需要关注</div>
+        <p class="analyst-take">Range Resources 股价走势可能是由于公司的财报佳或市场预期过高。投资者需要密切关注公司的财务状况和行业趋势，考虑买入其股票。同时，需要分析公司的根本面和竞争优势，判断是否是长期投资机会。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Seeking Alpha · 2026-06-13</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://seekingalpha.com/article/4914760-range-resources-strong-q1-realized-prices-put-it-on-track-for-800-million-in-2026-free-cash" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://seekingalpha.com/article/4914760-range-resources-strong-q1-realized-prices-put-it-on-track-for-800-million-in-2026-free-cash" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#ef4444"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#ef444415;color:#ef4444">⚠️ 风险警示</span>
+          <span class="sector-badge" style="background:#8b5cf620;color:#8b5cf6">金融</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$COF</span></div>
+        <h2 class="card-title">Capital One 股价大跌</h2>
+        <div class="why-box">💡 Capital One 股价大跌需要关注</div>
+        <p class="analyst-take">Capital One 股价大跌可能是由于公司的财报不佳或市场预期过高。投资者需要密切关注公司的财务状况和行业趋势，考虑减仓或观望。同时，需要分析公司的根本面和竞争优势，判断是否是买入机会。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Seeking Alpha · 2026-06-13</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://seekingalpha.com/article/4914759-capital-one-a-27-percent-sell-off-creates-a-compelling-entry-point" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://seekingalpha.com/article/4914759-capital-one-a-27-percent-sell-off-creates-a-compelling-entry-point" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#10b981"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#10b98115;color:#10b981">📈 买入关注</span>
+          <span class="sector-badge" style="background:#84cc1620;color:#84cc16">材料</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$GMTN</span></div>
+        <h2 class="card-title">G Mining Ventures 股价走势</h2>
+        <div class="why-box">💡 G Mining Ventures 股价走势需要关注</div>
+        <p class="analyst-take">G Mining Ventures 股价走势可能是由于公司的财报佳或市场预期过高。投资者需要密切关注公司的财务状况和行业趋势，考虑买入其股票。同时，需要分析公司的根本面和竞争优势，判断是否是长期投资机会。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Seeking Alpha · 2026-06-13</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://seekingalpha.com/article/4914761-g-mining-ventures-the-market-is-still-pricing-a-mine-builder-like-a-miner" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://seekingalpha.com/article/4914761-g-mining-ventures-the-market-is-still-pricing-a-mine-builder-like-a-miner" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#f59e0b"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#f59e0b15;color:#f59e0b">🔭 宏观观察</span>
+          <span class="sector-badge" style="background:#6b728020;color:#6b7280">宏观</span>
+        </div>
+        
+        <h2 class="card-title">全球通胀预期</h2>
+        <div class="why-box">💡 全球通胀预期需要关注</div>
+        <p class="analyst-take">全球通胀预期受到多种因素的影响，包括经济数据、央行政策和地缘政治事件。投资者需要关注这些因素的变化，调整投资策略。当前，全球通胀预期仍然存在不确定性，投资者需要保持谨慎和耐心。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Bloomberg Markets · 2026-06-13</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.bloomberg.com/news/articles/2026-06-13/prices-likely-to-stay-higher-even-if-conflict-ends-nagel-says" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.bloomberg.com/news/articles/2026-06-13/prices-likely-to-stay-higher-even-if-conflict-ends-nagel-says" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+</main>
+
+<div class="disclaimer">
+  ⚠️ 本站内容由 AI 自动生成，仅供参考，不构成任何投资建议。<br>
+  股市有风险，投资需谨慎，请结合自身判断做出决策。<br>
+  更新于 11:46 · 每天 06:00 自动更新
+</div>
+</body>
+</html>
