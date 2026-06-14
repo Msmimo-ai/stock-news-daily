@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+<title>股市分析日报 · 2026-06-14</title>
+<style>
+  :root {
+    --bg:#f8fafc; --surface:#fff; --text:#1e293b; --text2:#64748b;
+    --border:#e2e8f0; --radius:16px; --shadow:0 2px 12px rgba(0,0,0,0.06);
+    --max:480px;
+  }
+  @media(prefers-color-scheme:dark) {
+    :root { --bg:#0f172a; --surface:#1e293b; --text:#f1f5f9; --text2:#94a3b8; --border:#334155; --shadow:0 2px 12px rgba(0,0,0,0.3); }
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);min-height:100vh;padding-bottom:48px}
+
+  .header{background:var(--surface);border-bottom:1px solid var(--border);padding:18px 16px 14px;position:sticky;top:0;z-index:100;backdrop-filter:blur(12px)}
+  .header-inner{max-width:var(--max);margin:0 auto;display:flex;justify-content:space-between;align-items:center}
+  .logo{font-size:19px;font-weight:800;letter-spacing:-.3px}
+  .logo span{background:linear-gradient(135deg,#10b981,#3b82f6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+  .header-right{text-align:right;font-size:12px;color:var(--text2);line-height:1.6}
+  .header-date{font-weight:700;font-size:13px;color:var(--text)}
+
+  .summary-bar{max-width:var(--max);margin:0 auto;padding:10px 16px 0;display:flex;gap:8px;font-size:12px}
+  .sum-chip{padding:3px 10px;border-radius:20px;font-weight:600}
+
+  main{max-width:var(--max);margin:0 auto;padding:14px 12px;display:flex;flex-direction:column;gap:12px}
+
+  .card{background:var(--surface);border-radius:var(--radius);border:1px solid var(--border);box-shadow:var(--shadow);overflow:hidden}
+  .card-signal-bar{height:3px}
+  .card-body{padding:13px 15px 15px}
+  .card-top{display:flex;gap:6px;align-items:center;margin-bottom:8px;flex-wrap:wrap}
+  .signal-badge{font-size:11px;font-weight:700;padding:3px 9px;border-radius:10px;white-space:nowrap}
+  .sector-badge{font-size:10px;font-weight:600;padding:2px 8px;border-radius:8px}
+  .ticker-row{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:8px}
+  .ticker{font-size:12px;font-weight:800;color:#3b82f6;background:#3b82f610;border:1px solid #3b82f630;padding:2px 8px;border-radius:6px;font-family:monospace}
+  .card-title{font-size:15px;font-weight:700;line-height:1.45;margin-bottom:9px;letter-spacing:-.2px}
+  .why-box{font-size:12px;color:var(--text2);background:var(--bg);border-left:3px solid #f59e0b;padding:6px 10px;border-radius:0 8px 8px 0;margin-bottom:10px;line-height:1.5}
+  .analyst-take{font-size:13px;color:var(--text2);line-height:1.7;margin-bottom:12px}
+  .card-footer{display:flex;justify-content:space-between;align-items:center;gap:8px}
+  .pub-meta{font-size:11px;color:var(--text2);flex-shrink:0}
+  .card-links{display:flex;gap:6px;flex-shrink:0}
+  .btn-zh{font-size:12px;font-weight:600;color:#fff;background:#3b82f6;padding:4px 10px;border-radius:8px;text-decoration:none;white-space:nowrap}
+  .btn-zh:hover{background:#2563eb}
+  .btn-src{font-size:11px;color:var(--text2);text-decoration:none;padding:4px 7px;border-radius:6px;border:1px solid var(--border);white-space:nowrap}
+  .btn-src:hover{color:var(--text)}
+
+  .disclaimer{max-width:var(--max);margin:20px auto 0;padding:12px 16px;font-size:11px;color:var(--text2);text-align:center;border-top:1px solid var(--border);line-height:1.7}
+</style>
+</head>
+<body>
+<header class="header">
+  <div class="header-inner">
+    <div class="logo">📈 <span>股市分析日报</span></div>
+    <div class="header-right">
+      <div class="header-date">2026-06-14</div>
+      <div>今日精选 10 篇</div>
+    </div>
+  </div>
+  <div class="summary-bar">
+    <span class="sum-chip" style="background:#10b98115;color:#10b981">📈 买入关注 4</span>
+    <span class="sum-chip" style="background:#ef444415;color:#ef4444">⚠️ 风险警示 1</span>
+    <span class="sum-chip" style="background:#f59e0b15;color:#f59e0b">🔭 宏观观察 5</span>
+  </div>
+</header>
+
+<main>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#ef4444"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#ef444415;color:#ef4444">⚠️ 风险警示</span>
+          <span class="sector-badge" style="background:#3b82f620;color:#3b82f6">科技</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$ORCL</span></div>
+        <h2 class="card-title">Oracle 股价暴跌 11%</h2>
+        <div class="why-box">💡 Oracle 股价暴跌</div>
+        <p class="analyst-take">Oracle 股价暴跌 11% 是由于公司计划增加资本募集和现金流问题，这对投资者来说是一个警示信号。尽管 Oracle 的盈利和收入超出了预期，但负的自由现金流和资本募集计划对股价产生了负面影响。投资者应该谨慎对待这一情况，考虑减仓或观望。Oracle 的财报显示出公司面临的挑战，投资者需要密切关注公司的后续发展。</p>
+        <div class="card-footer">
+          <span class="pub-meta">CNBC · 2026-06-12</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.cnbc.com/2026/06/11/oracle-shares-tumble-11percent-on-increased-capital-raise-cash-concerns.html" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.cnbc.com/2026/06/11/oracle-shares-tumble-11percent-on-increased-capital-raise-cash-concerns.html" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#10b981"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#10b98115;color:#10b981">📈 买入关注</span>
+          <span class="sector-badge" style="background:#10b98120;color:#10b981">医疗</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$PFE</span></div>
+        <h2 class="card-title">Pfizer 被评为最佳长寿股</h2>
+        <div class="why-box">💡 最佳长寿股</div>
+        <p class="analyst-take">Pfizer 被评为最佳长寿股，这意味着公司的长期增长前景良好。作为一家领先的制药公司，Pfizer 在医疗领域具有强大的竞争力和创新能力。投资者可以考虑买入该股，长期持有。Pfizer 的产品线和研发能力使其成为一个值得关注的投资机会。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Yahoo Finance · 2026-06-13</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://finance.yahoo.com/sectors/healthcare/articles/pfizer-pfe-best-longevity-stock-104027293.html" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://finance.yahoo.com/sectors/healthcare/articles/pfizer-pfe-best-longevity-stock-104027293.html" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#10b981"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#10b98115;color:#10b981">📈 买入关注</span>
+          <span class="sector-badge" style="background:#3b82f620;color:#3b82f6">科技</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$SPACEX</span></div>
+        <h2 class="card-title">SpaceX 首次公开募股</h2>
+        <div class="why-box">💡 首次公开募股</div>
+        <p class="analyst-take">SpaceX 首次公开募股是一个重要的事件，标志着该公司进入一个新的发展阶段。作为一家领先的航天技术公司，SpaceX 的增长前景广阔。投资者可以考虑买入该股，长期持有。SpaceX 的创新能力和市场需求使其成为一个值得关注的投资机会。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Bloomberg Markets · 2026-06-14</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.bloomberg.com/news/articles/2026-06-14/spacex-surge-further-boosts-saudi-billionaire-prince-s-fortune" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.bloomberg.com/news/articles/2026-06-14/spacex-surge-further-boosts-saudi-billionaire-prince-s-fortune" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#f59e0b"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#f59e0b15;color:#f59e0b">🔭 宏观观察</span>
+          <span class="sector-badge" style="background:#6b728020;color:#6b7280">宏观</span>
+        </div>
+        
+        <h2 class="card-title">美国国债突破 100 万亿美元</h2>
+        <div class="why-box">💡 国债突破 100 万亿美元</div>
+        <p class="analyst-take">美国国债突破 100 万亿美元是一个重要的宏观经济事件，反映出政府的财政政策和债务水平。投资者需要关注这一事件对经济和金融市场的影响，特别是对利率和通胀的影响。国债的增长可能会导致利率上升和通胀加剧，投资者需要调整投资策略。</p>
+        <div class="card-footer">
+          <span class="pub-meta">MarketWatch · 2026-06-13</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.marketwatch.com/story/the-true-national-debt-just-hit-1-million-per-u-s-household-bd0924d1?mod=mw_rss_topstories" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.marketwatch.com/story/the-true-national-debt-just-hit-1-million-per-u-s-household-bd0924d1?mod=mw_rss_topstories" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#f59e0b"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#f59e0b15;color:#f59e0b">🔭 宏观观察</span>
+          <span class="sector-badge" style="background:#6b728020;color:#6b7280">宏观</span>
+        </div>
+        
+        <h2 class="card-title">社会保障面临 22% 的削减</h2>
+        <div class="why-box">💡 社会保障面临削减</div>
+        <p class="analyst-take">社会保障面临 22% 的削减是一个重要的宏观经济事件，反映出政府的财政政策和社会保障制度的挑战。投资者需要关注这一事件对经济和金融市场的影响，特别是对退休规划和社会保障的影响。社会保障的削减可能会导致退休人员的收入减少，投资者需要调整投资策略。</p>
+        <div class="card-footer">
+          <span class="pub-meta">MarketWatch · 2026-06-13</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.marketwatch.com/story/social-security-could-face-an-automatic-22-cut-in-2032-these-4-moves-will-protect-your-retirement-a00f9463?mod=mw_rss_topstories" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.marketwatch.com/story/social-security-could-face-an-automatic-22-cut-in-2032-these-4-moves-will-protect-your-retirement-a00f9463?mod=mw_rss_topstories" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#10b981"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#10b98115;color:#10b981">📈 买入关注</span>
+          <span class="sector-badge" style="background:#10b98120;color:#10b981">医疗</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$UNH</span></div>
+        <h2 class="card-title">JPMorgan 提高了 UnitedHealth Group 的目标价</h2>
+        <div class="why-box">💡 目标价上调</div>
+        <p class="analyst-take">JPMorgan 提高了 UnitedHealth Group 的目标价，这意味着该公司的增长前景良好。作为一家领先的医疗保险公司，UnitedHealth Group 在医疗领域具有强大的竞争力和创新能力。投资者可以考虑买入该股，长期持有。UnitedHealth Group 的产品线和市场需求使其成为一个值得关注的投资机会。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Yahoo Finance · 2026-06-13</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://finance.yahoo.com/sectors/healthcare/articles/jpmorgan-raises-price-target-unitedhealth-103948920.html" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://finance.yahoo.com/sectors/healthcare/articles/jpmorgan-raises-price-target-unitedhealth-103948920.html" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#f59e0b"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#f59e0b15;color:#f59e0b">🔭 宏观观察</span>
+          <span class="sector-badge" style="background:#6b728020;color:#6b7280">宏观</span>
+        </div>
+        
+        <h2 class="card-title">特朗普牛市即将结束</h2>
+        <div class="why-box">💡 牛市即将结束</div>
+        <p class="analyst-take">特朗普牛市即将结束是一个重要的宏观经济事件，反映出经济和金融市场的趋势。投资者需要关注这一事件对经济和金融市场的影响，特别是对股市和债市的影响。牛市的结束可能会导致市场波动加剧，投资者需要调整投资策略。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Yahoo Finance · 2026-06-13</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://finance.yahoo.com/markets/stocks/articles/trump-bull-market-coming-end-103500507.html" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://finance.yahoo.com/markets/stocks/articles/trump-bull-market-coming-end-103500507.html" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#10b981"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#10b98115;color:#10b981">📈 买入关注</span>
+          <span class="sector-badge" style="background:#3b82f620;color:#3b82f6">科技</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$SPACEX</span></div>
+        <h2 class="card-title">SpaceX 的上市对 Saudi Billionaire Prince 的财富产生了影响</h2>
+        <div class="why-box">💡 SpaceX 上市</div>
+        <p class="analyst-take">SpaceX 的上市对 Saudi Billionaire Prince 的财富产生了影响，这意味着该公司的增长前景广阔。作为一家领先的航天技术公司，SpaceX 的创新能力和市场需求使其成为一个值得关注的投资机会。投资者可以考虑买入该股，长期持有。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Bloomberg Markets · 2026-06-14</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.bloomberg.com/news/articles/2026-06-14/spacex-surge-further-boosts-saudi-billionaire-prince-s-fortune" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.bloomberg.com/news/articles/2026-06-14/spacex-surge-further-boosts-saudi-billionaire-prince-s-fortune" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#f59e0b"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#f59e0b15;color:#f59e0b">🔭 宏观观察</span>
+          <span class="sector-badge" style="background:#6b728020;color:#6b7280">宏观</span>
+        </div>
+        
+        <h2 class="card-title">南韩股市即将进入 MSCI 发达市场</h2>
+        <div class="why-box">💡 南韩股市即将进入 MSCI 发达市场</div>
+        <p class="analyst-take">南韩股市即将进入 MSCI 发达市场是一个重要的宏观经济事件，反映出南韩经济和金融市场的发展。投资者需要关注这一事件对经济和金融市场的影响，特别是对股市和债市的影响。南韩股市的发展可能会导致市场波动加剧，投资者需要调整投资策略。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Bloomberg Markets · 2026-06-14</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.bloomberg.com/news/articles/2026-06-14/world-s-hottest-stock-market-turns-attention-to-msci-moment" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.bloomberg.com/news/articles/2026-06-14/world-s-hottest-stock-market-turns-attention-to-msci-moment" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#f59e0b"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#f59e0b15;color:#f59e0b">🔭 宏观观察</span>
+          <span class="sector-badge" style="background:#6b728020;color:#6b7280">宏观</span>
+        </div>
+        
+        <h2 class="card-title">Fed 和 BOE 保持警惕</h2>
+        <div class="why-box">💡 Fed 和 BOE 保持警惕</div>
+        <p class="analyst-take">Fed 和 BOE 保持警惕是一个重要的宏观经济事件，反映出央行对经济和金融市场的态度。投资者需要关注这一事件对经济和金融市场的影响，特别是对利率和通胀的影响。央行的态度可能会导致利率上升和通胀加剧，投资者需要调整投资策略。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Bloomberg Markets · 2026-06-13</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.bloomberg.com/news/articles/2026-06-13/fed-boe-to-hold-rates-as-trump-seeks-iran-peace-deal" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.bloomberg.com/news/articles/2026-06-13/fed-boe-to-hold-rates-as-trump-seeks-iran-peace-deal" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+</main>
+
+<div class="disclaimer">
+  ⚠️ 本站内容由 AI 自动生成，仅供参考，不构成任何投资建议。<br>
+  股市有风险，投资需谨慎，请结合自身判断做出决策。<br>
+  更新于 11:48 · 每天 06:00 自动更新
+</div>
+</body>
+</html>
