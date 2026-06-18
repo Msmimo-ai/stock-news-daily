@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+<title>股市分析日报 · 2026-06-18</title>
+<style>
+  :root {
+    --bg:#f8fafc; --surface:#fff; --text:#1e293b; --text2:#64748b;
+    --border:#e2e8f0; --radius:16px; --shadow:0 2px 12px rgba(0,0,0,0.06);
+    --max:480px;
+  }
+  @media(prefers-color-scheme:dark) {
+    :root { --bg:#0f172a; --surface:#1e293b; --text:#f1f5f9; --text2:#94a3b8; --border:#334155; --shadow:0 2px 12px rgba(0,0,0,0.3); }
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);min-height:100vh;padding-bottom:48px}
+
+  .header{background:var(--surface);border-bottom:1px solid var(--border);padding:18px 16px 14px;position:sticky;top:0;z-index:100;backdrop-filter:blur(12px)}
+  .header-inner{max-width:var(--max);margin:0 auto;display:flex;justify-content:space-between;align-items:center}
+  .logo{font-size:19px;font-weight:800;letter-spacing:-.3px}
+  .logo span{background:linear-gradient(135deg,#10b981,#3b82f6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+  .header-right{text-align:right;font-size:12px;color:var(--text2);line-height:1.6}
+  .header-date{font-weight:700;font-size:13px;color:var(--text)}
+
+  .summary-bar{max-width:var(--max);margin:0 auto;padding:10px 16px 0;display:flex;gap:8px;font-size:12px}
+  .sum-chip{padding:3px 10px;border-radius:20px;font-weight:600}
+
+  main{max-width:var(--max);margin:0 auto;padding:14px 12px;display:flex;flex-direction:column;gap:12px}
+
+  .card{background:var(--surface);border-radius:var(--radius);border:1px solid var(--border);box-shadow:var(--shadow);overflow:hidden}
+  .card-signal-bar{height:3px}
+  .card-body{padding:13px 15px 15px}
+  .card-top{display:flex;gap:6px;align-items:center;margin-bottom:8px;flex-wrap:wrap}
+  .signal-badge{font-size:11px;font-weight:700;padding:3px 9px;border-radius:10px;white-space:nowrap}
+  .sector-badge{font-size:10px;font-weight:600;padding:2px 8px;border-radius:8px}
+  .ticker-row{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:8px}
+  .ticker{font-size:12px;font-weight:800;color:#3b82f6;background:#3b82f610;border:1px solid #3b82f630;padding:2px 8px;border-radius:6px;font-family:monospace}
+  .card-title{font-size:15px;font-weight:700;line-height:1.45;margin-bottom:9px;letter-spacing:-.2px}
+  .why-box{font-size:12px;color:var(--text2);background:var(--bg);border-left:3px solid #f59e0b;padding:6px 10px;border-radius:0 8px 8px 0;margin-bottom:10px;line-height:1.5}
+  .analyst-take{font-size:13px;color:var(--text2);line-height:1.7;margin-bottom:12px}
+  .card-footer{display:flex;justify-content:space-between;align-items:center;gap:8px}
+  .pub-meta{font-size:11px;color:var(--text2);flex-shrink:0}
+  .card-links{display:flex;gap:6px;flex-shrink:0}
+  .btn-zh{font-size:12px;font-weight:600;color:#fff;background:#3b82f6;padding:4px 10px;border-radius:8px;text-decoration:none;white-space:nowrap}
+  .btn-zh:hover{background:#2563eb}
+  .btn-src{font-size:11px;color:var(--text2);text-decoration:none;padding:4px 7px;border-radius:6px;border:1px solid var(--border);white-space:nowrap}
+  .btn-src:hover{color:var(--text)}
+
+  .disclaimer{max-width:var(--max);margin:20px auto 0;padding:12px 16px;font-size:11px;color:var(--text2);text-align:center;border-top:1px solid var(--border);line-height:1.7}
+</style>
+</head>
+<body>
+<header class="header">
+  <div class="header-inner">
+    <div class="logo">📈 <span>股市分析日报</span></div>
+    <div class="header-right">
+      <div class="header-date">2026-06-18</div>
+      <div>今日精选 10 篇</div>
+    </div>
+  </div>
+  <div class="summary-bar">
+    <span class="sum-chip" style="background:#10b98115;color:#10b981">📈 买入关注 2</span>
+    <span class="sum-chip" style="background:#ef444415;color:#ef4444">⚠️ 风险警示 2</span>
+    <span class="sum-chip" style="background:#f59e0b15;color:#f59e0b">🔭 宏观观察 6</span>
+  </div>
+</header>
+
+<main>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#f59e0b"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#f59e0b15;color:#f59e0b">🔭 宏观观察</span>
+          <span class="sector-badge" style="background:#6b728020;color:#6b7280">宏观</span>
+        </div>
+        
+        <h2 class="card-title">美股可能面临两周的波动</h2>
+        <div class="why-box">💡 了解美股波动风险和买入机会</div>
+        <p class="analyst-take">近期美股可能面临两周的波动，投资者应注意风险，但也可以把握买入机会。 Strategist Scott Rubner 表示，这两周是年度最重要的时期，可能会带来买入机会。投资者应密切关注市场动向，做好风险管理和买入准备。</p>
+        <div class="card-footer">
+          <span class="pub-meta">MarketWatch · 2026-06-18</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.marketwatch.com/story/the-next-two-weeks-could-bring-a-bumpy-ride-for-u-s-stocks-buy-any-dip-says-this-strategist-215d5595?mod=mw_rss_topstories" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.marketwatch.com/story/the-next-two-weeks-could-bring-a-bumpy-ride-for-u-s-stocks-buy-any-dip-says-this-strategist-215d5595?mod=mw_rss_topstories" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#f59e0b"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#f59e0b15;color:#f59e0b">🔭 宏观观察</span>
+          <span class="sector-badge" style="background:#6b728020;color:#6b7280">宏观</span>
+        </div>
+        
+        <h2 class="card-title">美联储主席Warsh表示将更听取市场信号</h2>
+        <div class="why-box">💡 了解美联储政策和市场影响</div>
+        <p class="analyst-take">美联储主席Warsh表示，将更听取市场信号，这可能会影响货币政策和市场走势。投资者应关注美联储的政策调整和市场反应。</p>
+        <div class="card-footer">
+          <span class="pub-meta">CNBC Markets · 2026-06-17</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.cnbc.com/2026/06/17/here-are-the-five-big-takeaways-from-kevin-warshs-first-meeting-as-fed-chairman.html" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.cnbc.com/2026/06/17/here-are-the-five-big-takeaways-from-kevin-warshs-first-meeting-as-fed-chairman.html" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#f59e0b"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#f59e0b15;color:#f59e0b">🔭 宏观观察</span>
+          <span class="sector-badge" style="background:#6b728020;color:#6b7280">宏观</span>
+        </div>
+        
+        <h2 class="card-title">英格兰银行保持利率不变</h2>
+        <div class="why-box">💡 了解英格兰银行政策和市场影响</div>
+        <p class="analyst-take">英格兰银行决定保持利率不变，这可能会影响英国经济和市场走势。投资者应关注英格兰银行的政策调整和市场反应。</p>
+        <div class="card-footer">
+          <span class="pub-meta">CNBC Markets · 2026-06-18</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.cnbc.com/2026/06/18/inflation-interest-rates-uk-bank-of-england-iran-deal.html" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.cnbc.com/2026/06/18/inflation-interest-rates-uk-bank-of-england-iran-deal.html" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#10b981"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#10b98115;color:#10b981">📈 买入关注</span>
+          <span class="sector-badge" style="background:#3b82f620;color:#3b82f6">科技</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$MU</span><span class="ticker">$AAPL</span></div>
+        <h2 class="card-title">Micron股价上涨，苹果也面临记忆芯片成本上升压力</h2>
+        <div class="why-box">💡 了解Micron和苹果的股价走势</div>
+        <p class="analyst-take">Micron股价上涨，苹果也面临记忆芯片成本上升压力。投资者应关注科技行业的发展和记忆芯片市场的走势。</p>
+        <div class="card-footer">
+          <span class="pub-meta">MarketWatch · 2026-06-18</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.marketwatch.com/story/microns-stock-is-on-the-rise-even-apple-isnt-safe-from-ballooning-memory-chip-costs-ddd04d74?mod=mw_rss_topstories" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.marketwatch.com/story/microns-stock-is-on-the-rise-even-apple-isnt-safe-from-ballooning-memory-chip-costs-ddd04d74?mod=mw_rss_topstories" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#ef4444"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#ef444415;color:#ef4444">⚠️ 风险警示</span>
+          <span class="sector-badge" style="background:#3b82f620;color:#3b82f6">科技</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$DATABRICKS</span></div>
+        <h2 class="card-title">Databricks销售增长超过80%，但利润率下降</h2>
+        <div class="why-box">💡 了解Databricks的财务表现</div>
+        <p class="analyst-take">Databricks销售增长超过80%，但利润率下降。投资者应关注公司的财务表现和市场走势。</p>
+        <div class="card-footer">
+          <span class="pub-meta">CNBC Earnings · 2026-06-16</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.cnbc.com/2026/06/16/databricks-revenue-growth-tops-80percent-to-6point9-billion-annualized.html" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.cnbc.com/2026/06/16/databricks-revenue-growth-tops-80percent-to-6point9-billion-annualized.html" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#10b981"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#10b98115;color:#10b981">📈 买入关注</span>
+          <span class="sector-badge" style="background:#10b98120;color:#10b981">医疗</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$CLPT</span></div>
+        <h2 class="card-title">ClearPoint Neuro的AMT-130获得FDA批准</h2>
+        <div class="why-box">💡 了解ClearPoint Neuro的产品开发</div>
+        <p class="analyst-take">ClearPoint Neuro的AMT-130获得FDA批准，这可能会推动公司的股价上涨。投资者应关注公司的产品开发和市场走势。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Seeking Alpha · 2026-06-18</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://seekingalpha.com/article/4915924-clearpoint-neuro-stock-amt-130-fda-reversal-revives-bull-case?source=feed_all_articles" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://seekingalpha.com/article/4915924-clearpoint-neuro-stock-amt-130-fda-reversal-revives-bull-case?source=feed_all_articles" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#ef4444"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#ef444415;color:#ef4444">⚠️ 风险警示</span>
+          <span class="sector-badge" style="background:#3b82f620;color:#3b82f6">科技</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$RBLX</span></div>
+        <h2 class="card-title">Roblox的安全问题拖累利润率</h2>
+        <div class="why-box">💡 了解Roblox的财务表现</div>
+        <p class="analyst-take">Roblox的安全问题拖累利润率，投资者应关注公司的财务表现和市场走势。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Seeking Alpha · 2026-06-18</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://seekingalpha.com/article/4915802-roblox-safety-is-delaying-margin-improvement?source=feed_all_articles" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://seekingalpha.com/article/4915802-roblox-safety-is-delaying-margin-improvement?source=feed_all_articles" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#f59e0b"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#f59e0b15;color:#f59e0b">🔭 宏观观察</span>
+          <span class="sector-badge" style="background:#f59e0b20;color:#f59e0b">能源</span>
+        </div>
+        
+        <h2 class="card-title">油价下跌，美股可能面临波动</h2>
+        <div class="why-box">💡 了解油价和美股的走势</div>
+        <p class="analyst-take">油价下跌，美股可能面临波动。投资者应关注能源市场的走势和美股的反应。</p>
+        <div class="card-footer">
+          <span class="pub-meta">MarketWatch · 2026-06-18</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.marketwatch.com/story/gasoline-prices-just-fell-below-4-per-gallon-by-the-smallest-possible-amount-50df2d45?mod=mw_rss_topstories" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.marketwatch.com/story/gasoline-prices-just-fell-below-4-per-gallon-by-the-smallest-possible-amount-50df2d45?mod=mw_rss_topstories" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#f59e0b"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#f59e0b15;color:#f59e0b">🔭 宏观观察</span>
+          <span class="sector-badge" style="background:#6b728020;color:#6b7280">宏观</span>
+        </div>
+        
+        <h2 class="card-title">英格兰银行保持利率不变， Bailey表示这是一个合理的决定</h2>
+        <div class="why-box">💡 了解英格兰银行政策和市场影响</div>
+        <p class="analyst-take">英格兰银行保持利率不变， Bailey表示这是一个合理的决定。投资者应关注英格兰银行的政策调整和市场反应。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Bloomberg Markets · 2026-06-18</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.bloomberg.com/news/videos/2026-06-18/boe-s-bailey-says-holding-rates-is-a-sensible-decision-video" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.bloomberg.com/news/videos/2026-06-18/boe-s-bailey-says-holding-rates-is-a-sensible-decision-video" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#f59e0b"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#f59e0b15;color:#f59e0b">🔭 宏观观察</span>
+          <span class="sector-badge" style="background:#6b728020;color:#6b7280">宏观</span>
+        </div>
+        
+        <h2 class="card-title">印度季风开始，雨量不足40%</h2>
+        <div class="why-box">💡 了解印度季风和经济影响</div>
+        <p class="analyst-take">印度季风开始，雨量不足40%。投资者应关注印度经济和市场走势。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Bloomberg Markets · 2026-06-18</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.bloomberg.com/news/articles/2026-06-18/india-monsoon-starts-almost-40-short-as-el-nino-upends-weather" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.bloomberg.com/news/articles/2026-06-18/india-monsoon-starts-almost-40-short-as-el-nino-upends-weather" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+</main>
+
+<div class="disclaimer">
+  ⚠️ 本站内容由 AI 自动生成，仅供参考，不构成任何投资建议。<br>
+  股市有风险，投资需谨慎，请结合自身判断做出决策。<br>
+  更新于 12:45 · 每天 06:00 自动更新
+</div>
+</body>
+</html>
