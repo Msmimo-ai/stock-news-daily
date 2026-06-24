@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+<title>股市分析日报 · 2026-06-24</title>
+<style>
+  :root {
+    --bg:#f8fafc; --surface:#fff; --text:#1e293b; --text2:#64748b;
+    --border:#e2e8f0; --radius:16px; --shadow:0 2px 12px rgba(0,0,0,0.06);
+    --max:480px;
+  }
+  @media(prefers-color-scheme:dark) {
+    :root { --bg:#0f172a; --surface:#1e293b; --text:#f1f5f9; --text2:#94a3b8; --border:#334155; --shadow:0 2px 12px rgba(0,0,0,0.3); }
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);min-height:100vh;padding-bottom:48px}
+
+  .header{background:var(--surface);border-bottom:1px solid var(--border);padding:18px 16px 14px;position:sticky;top:0;z-index:100;backdrop-filter:blur(12px)}
+  .header-inner{max-width:var(--max);margin:0 auto;display:flex;justify-content:space-between;align-items:center}
+  .logo{font-size:19px;font-weight:800;letter-spacing:-.3px}
+  .logo span{background:linear-gradient(135deg,#10b981,#3b82f6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+  .header-right{text-align:right;font-size:12px;color:var(--text2);line-height:1.6}
+  .header-date{font-weight:700;font-size:13px;color:var(--text)}
+
+  .summary-bar{max-width:var(--max);margin:0 auto;padding:10px 16px 0;display:flex;gap:8px;font-size:12px}
+  .sum-chip{padding:3px 10px;border-radius:20px;font-weight:600}
+
+  main{max-width:var(--max);margin:0 auto;padding:14px 12px;display:flex;flex-direction:column;gap:12px}
+
+  .card{background:var(--surface);border-radius:var(--radius);border:1px solid var(--border);box-shadow:var(--shadow);overflow:hidden}
+  .card-signal-bar{height:3px}
+  .card-body{padding:13px 15px 15px}
+  .card-top{display:flex;gap:6px;align-items:center;margin-bottom:8px;flex-wrap:wrap}
+  .signal-badge{font-size:11px;font-weight:700;padding:3px 9px;border-radius:10px;white-space:nowrap}
+  .sector-badge{font-size:10px;font-weight:600;padding:2px 8px;border-radius:8px}
+  .ticker-row{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:8px}
+  .ticker{font-size:12px;font-weight:800;color:#3b82f6;background:#3b82f610;border:1px solid #3b82f630;padding:2px 8px;border-radius:6px;font-family:monospace}
+  .card-title{font-size:15px;font-weight:700;line-height:1.45;margin-bottom:9px;letter-spacing:-.2px}
+  .why-box{font-size:12px;color:var(--text2);background:var(--bg);border-left:3px solid #f59e0b;padding:6px 10px;border-radius:0 8px 8px 0;margin-bottom:10px;line-height:1.5}
+  .analyst-take{font-size:13px;color:var(--text2);line-height:1.7;margin-bottom:12px}
+  .card-footer{display:flex;justify-content:space-between;align-items:center;gap:8px}
+  .pub-meta{font-size:11px;color:var(--text2);flex-shrink:0}
+  .card-links{display:flex;gap:6px;flex-shrink:0}
+  .btn-zh{font-size:12px;font-weight:600;color:#fff;background:#3b82f6;padding:4px 10px;border-radius:8px;text-decoration:none;white-space:nowrap}
+  .btn-zh:hover{background:#2563eb}
+  .btn-src{font-size:11px;color:var(--text2);text-decoration:none;padding:4px 7px;border-radius:6px;border:1px solid var(--border);white-space:nowrap}
+  .btn-src:hover{color:var(--text)}
+
+  .disclaimer{max-width:var(--max);margin:20px auto 0;padding:12px 16px;font-size:11px;color:var(--text2);text-align:center;border-top:1px solid var(--border);line-height:1.7}
+</style>
+</head>
+<body>
+<header class="header">
+  <div class="header-inner">
+    <div class="logo">📈 <span>股市分析日报</span></div>
+    <div class="header-right">
+      <div class="header-date">2026-06-24</div>
+      <div>今日精选 10 篇</div>
+    </div>
+  </div>
+  <div class="summary-bar">
+    <span class="sum-chip" style="background:#10b98115;color:#10b981">📈 买入关注 6</span>
+    <span class="sum-chip" style="background:#ef444415;color:#ef4444">⚠️ 风险警示 2</span>
+    <span class="sum-chip" style="background:#f59e0b15;color:#f59e0b">🔭 宏观观察 2</span>
+  </div>
+</header>
+
+<main>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#10b981"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#10b98115;color:#10b981">📈 买入关注</span>
+          <span class="sector-badge" style="background:#3b82f620;color:#3b82f6">科技</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$SK Hynix</span></div>
+        <h2 class="card-title">SK Hynix计划在纳斯达克发行存托凭证</h2>
+        <div class="why-box">💡 SK Hynix的增长前景看好</div>
+        <p class="analyst-take">SK Hynix计划在纳斯达克发行存托凭证，这意味着美国投资者将有机会投资这家领先的内存芯片制造商。考虑到人工智能应用对内存芯片的巨大需求，SK Hynix的增长前景看好。建议投资者关注这次发行，并考虑买入该公司的股票。</p>
+        <div class="card-footer">
+          <span class="pub-meta">MarketWatch · 2026-06-24</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.marketwatch.com/story/coming-to-america-sk-hynix-plans-depository-receipt-listing-on-the-nasdaq-c3c9695e?mod=mw_rss_topstories" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.marketwatch.com/story/coming-to-america-sk-hynix-plans-depository-receipt-listing-on-the-nasdaq-c3c9695e?mod=mw_rss_topstories" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#ef4444"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#ef444415;color:#ef4444">⚠️ 风险警示</span>
+          <span class="sector-badge" style="background:#3b82f620;color:#3b82f6">科技</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$微芯股</span></div>
+        <h2 class="card-title">半导体股大跌后会如何</h2>
+        <div class="why-box">💡 半导体股大跌后会如何</div>
+        <p class="analyst-take">半导体股近期大跌，但历史数据显示，这类股价下跌通常是暂时的。然而，投资者仍需要谨慎，因为市场波动可能会持续。建议投资者密切关注市场动态，并考虑适时调整投资策略。</p>
+        <div class="card-footer">
+          <span class="pub-meta">MarketWatch · 2026-06-24</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.marketwatch.com/story/heres-what-happened-after-17-other-semiconductor-stock-one-day-plunges-over-the-last-15-years-c9b9ad8d?mod=mw_rss_topstories" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.marketwatch.com/story/heres-what-happened-after-17-other-semiconductor-stock-one-day-plunges-over-the-last-15-years-c9b9ad8d?mod=mw_rss_topstories" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#10b981"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#10b98115;color:#10b981">📈 买入关注</span>
+          <span class="sector-badge" style="background:#06b6d420;color:#06b6d4">工业</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$FedEx</span></div>
+        <h2 class="card-title">FedEx发布强劲季度财报</h2>
+        <div class="why-box">💡 FedEx发布强劲季度财报</div>
+        <p class="analyst-take">FedEx发布的季度财报强劲，表明公司的业务正在稳步增长。考虑到物流行业的前景，FedEx的增长潜力看好。建议投资者关注这家公司，并考虑买入其股票。</p>
+        <div class="card-footer">
+          <span class="pub-meta">CNBC Earnings · 2026-06-23</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.cnbc.com/2026/06/23/fedex-fdx-q4-2026-earnings.html" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.cnbc.com/2026/06/23/fedex-fdx-q4-2026-earnings.html" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#ef4444"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#ef444415;color:#ef4444">⚠️ 风险警示</span>
+          <span class="sector-badge" style="background:#3b82f620;color:#3b82f6">科技</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$Cerebras</span></div>
+        <h2 class="card-title">Cerebras发布首份季度财报</h2>
+        <div class="why-box">💡 Cerebras发布首份季度财报</div>
+        <p class="analyst-take">Cerebras发布的首份季度财报显示，公司的利润率下降。考虑到人工智能芯片市场的竞争，Cerebras的增长前景存在不确定性。建议投资者谨慎对待这家公司，并考虑减少持股比例。</p>
+        <div class="card-footer">
+          <span class="pub-meta">CNBC Earnings · 2026-06-23</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.cnbc.com/2026/06/23/cerebras-cbrs-q1-earnings-report-2026.html" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.cnbc.com/2026/06/23/cerebras-cbrs-q1-earnings-report-2026.html" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#10b981"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#10b98115;color:#10b981">📈 买入关注</span>
+          <span class="sector-badge" style="background:#8b5cf620;color:#8b5cf6">金融</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$Ares Capital</span></div>
+        <h2 class="card-title">Ares Capital被评为蓝筹便宜股</h2>
+        <div class="why-box">💡 Ares Capital被评为蓝筹便宜股</div>
+        <p class="analyst-take">Ares Capital被评为蓝筹便宜股，意味着这家公司的股票价格低于其实际价值。考虑到公司的稳定业务和高收益，Ares Capital的投资价值看好。建议投资者关注这家公司，并考虑买入其股票。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Seeking Alpha · 2026-06-24</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://seekingalpha.com/article/4917192-ares-capital-buy-this-blue-chip-bargain-with-11-percent-yield-upgrade?source=feed_all_articles" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://seekingalpha.com/article/4917192-ares-capital-buy-this-blue-chip-bargain-with-11-percent-yield-upgrade?source=feed_all_articles" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#10b981"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#10b98115;color:#10b981">📈 买入关注</span>
+          <span class="sector-badge" style="background:#3b82f620;color:#3b82f6">科技</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$Accenture</span></div>
+        <h2 class="card-title">Accenture被认为是十年难遇的买入机会</h2>
+        <div class="why-box">💡 Accenture被认为是十年难遇的买入机会</div>
+        <p class="analyst-take">Accenture被认为是十年难遇的买入机会，意味着这家公司的股票价格低于其实际价值。考虑到公司的稳定业务和增长前景，Accenture的投资价值看好。建议投资者关注这家公司，并考虑买入其股票。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Seeking Alpha · 2026-06-24</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://seekingalpha.com/article/4917271-accenture-a-rare-once-in-a-decade-buying-opportunity?source=feed_all_articles" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://seekingalpha.com/article/4917271-accenture-a-rare-once-in-a-decade-buying-opportunity?source=feed_all_articles" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#10b981"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#10b98115;color:#10b981">📈 买入关注</span>
+          <span class="sector-badge" style="background:#f59e0b20;color:#f59e0b">能源</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$Chevron</span><span class="ticker">$Microsoft</span></div>
+        <h2 class="card-title">Chevron与Microsoft合作开发AI技术</h2>
+        <div class="why-box">💡 Chevron与Microsoft合作开发AI技术</div>
+        <p class="analyst-take">Chevron与Microsoft合作开发AI技术，意味着这两家公司将在能源和科技领域进行深度合作。考虑到AI技术在能源行业的应用前景，Chevron和Microsoft的合作看好。建议投资者关注这两家公司，并考虑买入其股票。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Seeking Alpha · 2026-06-24</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://seekingalpha.com/article/4917270-chevrons-microsoft-ai-deal-could-be-the-blueprint-for-a-new-growth-engine?source=feed_all_articles" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://seekingalpha.com/article/4917270-chevrons-microsoft-ai-deal-could-be-the-blueprint-for-a-new-growth-engine?source=feed_all_articles" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#10b981"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#10b98115;color:#10b981">📈 买入关注</span>
+          <span class="sector-badge" style="background:#ec489920;color:#ec4899">消费</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$AMC Entertainment</span></div>
+        <h2 class="card-title">AMC Entertainment加强了其财务实力</h2>
+        <div class="why-box">💡 AMC Entertainment加强了其财务实力</div>
+        <p class="analyst-take">AMC Entertainment加强了其财务实力，意味着这家公司的财务状况有所改善。考虑到电影行业的前景，AMC Entertainment的增长潜力看好。建议投资者关注这家公司，并考虑买入其股票。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Seeking Alpha · 2026-06-24</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://seekingalpha.com/article/4917268-amc-entertainment-strengthened-balance-sheet-from-equity-offerings-and-improved-box-office?source=feed_all_articles" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://seekingalpha.com/article/4917268-amc-entertainment-strengthened-balance-sheet-from-equity-offerings-and-improved-box-office?source=feed_all_articles" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#f59e0b"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#f59e0b15;color:#f59e0b">🔭 宏观观察</span>
+          <span class="sector-badge" style="background:#6b728020;color:#6b7280">宏观</span>
+        </div>
+        
+        <h2 class="card-title">美国发行对伊朗石油制裁豁免</h2>
+        <div class="why-box">💡 美国发行对伊朗石油制裁豁免</div>
+        <p class="analyst-take">美国发行对伊朗石油制裁豁免，意味着伊朗石油将重新进入国际市场。考虑到石油市场的供需平衡，这一事件可能会对油价产生影响。建议投资者关注这一事件，并考虑调整投资策略。</p>
+        <div class="card-footer">
+          <span class="pub-meta">CNBC Markets · 2026-06-23</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.cnbc.com/2026/06/23/us-iran-oil-sanction-relief-strait-of-hormuz-peace-deal-.html" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.cnbc.com/2026/06/23/us-iran-oil-sanction-relief-strait-of-hormuz-peace-deal-.html" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#f59e0b"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#f59e0b15;color:#f59e0b">🔭 宏观观察</span>
+          <span class="sector-badge" style="background:#6b728020;color:#6b7280">宏观</span>
+        </div>
+        
+        <h2 class="card-title">欧洲热浪导致电力供应紧张</h2>
+        <div class="why-box">💡 欧洲热浪导致电力供应紧张</div>
+        <p class="analyst-take">欧洲热浪导致电力供应紧张，意味着欧洲的能源市场可能会出现波动。考虑到能源市场的供需平衡，这一事件可能会对能源价格产生影响。建议投资者关注这一事件，并考虑调整投资策略。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Bloomberg Markets · 2026-06-24</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.bloomberg.com/news/articles/2026-06-24/europe-heat-wave-strains-power-supply-sends-prices-soaring" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.bloomberg.com/news/articles/2026-06-24/europe-heat-wave-strains-power-supply-sends-prices-soaring" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+</main>
+
+<div class="disclaimer">
+  ⚠️ 本站内容由 AI 自动生成，仅供参考，不构成任何投资建议。<br>
+  股市有风险，投资需谨慎，请结合自身判断做出决策。<br>
+  更新于 12:13 · 每天 06:00 自动更新
+</div>
+</body>
+</html>
