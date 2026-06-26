@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+<title>股市分析日报 · 2026-06-26</title>
+<style>
+  :root {
+    --bg:#f8fafc; --surface:#fff; --text:#1e293b; --text2:#64748b;
+    --border:#e2e8f0; --radius:16px; --shadow:0 2px 12px rgba(0,0,0,0.06);
+    --max:480px;
+  }
+  @media(prefers-color-scheme:dark) {
+    :root { --bg:#0f172a; --surface:#1e293b; --text:#f1f5f9; --text2:#94a3b8; --border:#334155; --shadow:0 2px 12px rgba(0,0,0,0.3); }
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);min-height:100vh;padding-bottom:48px}
+
+  .header{background:var(--surface);border-bottom:1px solid var(--border);padding:18px 16px 14px;position:sticky;top:0;z-index:100;backdrop-filter:blur(12px)}
+  .header-inner{max-width:var(--max);margin:0 auto;display:flex;justify-content:space-between;align-items:center}
+  .logo{font-size:19px;font-weight:800;letter-spacing:-.3px}
+  .logo span{background:linear-gradient(135deg,#10b981,#3b82f6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+  .header-right{text-align:right;font-size:12px;color:var(--text2);line-height:1.6}
+  .header-date{font-weight:700;font-size:13px;color:var(--text)}
+
+  .summary-bar{max-width:var(--max);margin:0 auto;padding:10px 16px 0;display:flex;gap:8px;font-size:12px}
+  .sum-chip{padding:3px 10px;border-radius:20px;font-weight:600}
+
+  main{max-width:var(--max);margin:0 auto;padding:14px 12px;display:flex;flex-direction:column;gap:12px}
+
+  .card{background:var(--surface);border-radius:var(--radius);border:1px solid var(--border);box-shadow:var(--shadow);overflow:hidden}
+  .card-signal-bar{height:3px}
+  .card-body{padding:13px 15px 15px}
+  .card-top{display:flex;gap:6px;align-items:center;margin-bottom:8px;flex-wrap:wrap}
+  .signal-badge{font-size:11px;font-weight:700;padding:3px 9px;border-radius:10px;white-space:nowrap}
+  .sector-badge{font-size:10px;font-weight:600;padding:2px 8px;border-radius:8px}
+  .ticker-row{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:8px}
+  .ticker{font-size:12px;font-weight:800;color:#3b82f6;background:#3b82f610;border:1px solid #3b82f630;padding:2px 8px;border-radius:6px;font-family:monospace}
+  .card-title{font-size:15px;font-weight:700;line-height:1.45;margin-bottom:9px;letter-spacing:-.2px}
+  .why-box{font-size:12px;color:var(--text2);background:var(--bg);border-left:3px solid #f59e0b;padding:6px 10px;border-radius:0 8px 8px 0;margin-bottom:10px;line-height:1.5}
+  .analyst-take{font-size:13px;color:var(--text2);line-height:1.7;margin-bottom:12px}
+  .card-footer{display:flex;justify-content:space-between;align-items:center;gap:8px}
+  .pub-meta{font-size:11px;color:var(--text2);flex-shrink:0}
+  .card-links{display:flex;gap:6px;flex-shrink:0}
+  .btn-zh{font-size:12px;font-weight:600;color:#fff;background:#3b82f6;padding:4px 10px;border-radius:8px;text-decoration:none;white-space:nowrap}
+  .btn-zh:hover{background:#2563eb}
+  .btn-src{font-size:11px;color:var(--text2);text-decoration:none;padding:4px 7px;border-radius:6px;border:1px solid var(--border);white-space:nowrap}
+  .btn-src:hover{color:var(--text)}
+
+  .disclaimer{max-width:var(--max);margin:20px auto 0;padding:12px 16px;font-size:11px;color:var(--text2);text-align:center;border-top:1px solid var(--border);line-height:1.7}
+</style>
+</head>
+<body>
+<header class="header">
+  <div class="header-inner">
+    <div class="logo">📈 <span>股市分析日报</span></div>
+    <div class="header-right">
+      <div class="header-date">2026-06-26</div>
+      <div>今日精选 10 篇</div>
+    </div>
+  </div>
+  <div class="summary-bar">
+    <span class="sum-chip" style="background:#10b98115;color:#10b981">📈 买入关注 4</span>
+    <span class="sum-chip" style="background:#ef444415;color:#ef4444">⚠️ 风险警示 2</span>
+    <span class="sum-chip" style="background:#f59e0b15;color:#f59e0b">🔭 宏观观察 4</span>
+  </div>
+</header>
+
+<main>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#10b981"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#10b98115;color:#10b981">📈 买入关注</span>
+          <span class="sector-badge" style="background:#3b82f620;color:#3b82f6">科技</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$MU</span></div>
+        <h2 class="card-title">美光股价暴涨</h2>
+        <div class="why-box">💡 美光的长期客户协议和相对便宜的估值</div>
+        <p class="analyst-take">美光的最新财报显示，公司的长期客户协议将带来更可预测的财务表现，这将解决投资者对公司可持续性的担忧。同时，美光的股价仍然相对便宜，具有较高的增长潜力。因此，建议投资者关注美光的股价，考虑买入。美光的业绩增长和估值优势使其成为当前市场中较为吸引人的投资机会。</p>
+        <div class="card-footer">
+          <span class="pub-meta">MarketWatch · 2026-06-26</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.marketwatch.com/story/microns-stock-is-still-dirt-cheap-some-analysts-say-thats-about-to-change-5514e54f?mod=mw_rss_topstories" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.marketwatch.com/story/microns-stock-is-still-dirt-cheap-some-analysts-say-thats-about-to-change-5514e54f?mod=mw_rss_topstories" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#ef4444"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#ef444415;color:#ef4444">⚠️ 风险警示</span>
+          <span class="sector-badge" style="background:#f59e0b20;color:#f59e0b">能源</span>
+        </div>
+        
+        <h2 class="card-title">油价走势不确定</h2>
+        <div class="why-box">💡 油价走势不确定和地缘政治风险</div>
+        <p class="analyst-take">近期油价走势不确定， Strait of Hormuz 的航运情况和地缘政治因素都可能对油价产生影响。投资者需要密切关注油价走势和相关新闻，考虑对投资组合进行调整。当前的不确定性可能导致油价波动，投资者需要谨慎应对。</p>
+        <div class="card-footer">
+          <span class="pub-meta">MarketWatch · 2026-06-26</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.marketwatch.com/story/oil-heads-for-another-losing-week-but-analyst-warns-sluggish-strait-of-hormuz-traffic-could-send-it-soaring-again-80ab9ba8?mod=mw_rss_topstories" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.marketwatch.com/story/oil-heads-for-another-losing-week-but-analyst-warns-sluggish-strait-of-hormuz-traffic-could-send-it-soaring-again-80ab9ba8?mod=mw_rss_topstories" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#f59e0b"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#f59e0b15;color:#f59e0b">🔭 宏观观察</span>
+          <span class="sector-badge" style="background:#6b728020;color:#6b7280">宏观</span>
+        </div>
+        
+        <h2 class="card-title">S&P 500 波动性指标混乱</h2>
+        <div class="why-box">💡 市场波动性指标混乱</div>
+        <p class="analyst-take">当前的市场波动性指标显示出混乱的信号，投资者需要谨慎对待市场的变化。同时，需要关注经济数据和政策变化对市场的影响。当前的市场环境较为复杂，投资者需要保持警惕和灵活性。</p>
+        <div class="card-footer">
+          <span class="pub-meta">MarketWatch · 2026-06-26</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.marketwatch.com/story/s-p-500-volatility-indicators-are-flashing-mixed-signals-locking-bulls-and-bears-in-a-tug-of-war-0de0ef19?mod=mw_rss_topstories" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.marketwatch.com/story/s-p-500-volatility-indicators-are-flashing-mixed-signals-locking-bulls-and-bears-in-a-tug-of-war-0de0ef19?mod=mw_rss_topstories" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#f59e0b"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#f59e0b15;color:#f59e0b">🔭 宏观观察</span>
+          <span class="sector-badge" style="background:#6b728020;color:#6b7280">宏观</span>
+        </div>
+        
+        <h2 class="card-title">美元走势强劲</h2>
+        <div class="why-box">💡 美元走势强劲</div>
+        <p class="analyst-take">当前美元走势强劲，主要受多种因素影响，包括经济数据、政策变化和地缘政治因素。投资者需要关注美元走势对投资组合的影响，考虑对投资策略进行调整。美元的走势可能对其他资产类别产生影响，投资者需要保持关注。</p>
+        <div class="card-footer">
+          <span class="pub-meta">MarketWatch · 2026-06-26</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.marketwatch.com/story/a-fistful-of-dollars-five-reasons-why-the-u-s-currency-is-rising-b29df92a?mod=mw_rss_topstories" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.marketwatch.com/story/a-fistful-of-dollars-five-reasons-why-the-u-s-currency-is-rising-b29df92a?mod=mw_rss_topstories" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#ef4444"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#ef444415;color:#ef4444">⚠️ 风险警示</span>
+          <span class="sector-badge" style="background:#06b6d420;color:#06b6d4">工业</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$SPCE</span></div>
+        <h2 class="card-title">SpaceX 股价暴跌</h2>
+        <div class="why-box">💡 SpaceX 股价暴跌</div>
+        <p class="analyst-take">SpaceX 的股价暴跌，主要受投资者情绪变化和估值调整的影响。投资者需要谨慎对待当前的市场环境，考虑对投资组合进行调整。当前的暴跌可能是投资机会，但也需要关注公司的基本面和长期增长潜力。</p>
+        <div class="card-footer">
+          <span class="pub-meta">CNBC Markets · 2026-06-26</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.cnbc.com/2026/06/26/spacex-fomo-is-officially-over-space-stocks-across-the-board-are-getting-punished-77234fe8?mod=mw_rss_topstories" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.cnbc.com/2026/06/26/spacex-fomo-is-officially-over-space-stocks-across-the-board-are-getting-punished-77234fe8?mod=mw_rss_topstories" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#10b981"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#10b98115;color:#10b981">📈 买入关注</span>
+          <span class="sector-badge" style="background:#3b82f620;color:#3b82f6">科技</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$MU</span></div>
+        <h2 class="card-title">Micron 业绩增长</h2>
+        <div class="why-box">💡 Micron 业绩增长</div>
+        <p class="analyst-take">Micron 的最新业绩显示出强劲的增长，主要受公司的长期客户协议和技术优势的影响。投资者需要关注公司的持续增长和估值优势，考虑买入。Micron 的业绩增长和估值优势使其成为当前市场中较为吸引人的投资机会。</p>
+        <div class="card-footer">
+          <span class="pub-meta">CNBC Earnings · 2026-06-25</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.cnbc.com/2026/06/25/micron-says-the-ai-party-is-far-from-over-but-not-all-are-celebrating.html" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.cnbc.com/2026/06/25/micron-says-the-ai-party-is-far-from-over-but-not-all-are-celebrating.html" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#10b981"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#10b98115;color:#10b981">📈 买入关注</span>
+          <span class="sector-badge" style="background:#06b6d420;color:#06b6d4">工业</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$FDX</span></div>
+        <h2 class="card-title">FedEx 业绩增长</h2>
+        <div class="why-box">💡 FedEx 业绩增长</div>
+        <p class="analyst-take">FedEx 的最新业绩显示出强劲的增长，主要受公司的运营效率和市场需求的影响。投资者需要关注公司的持续增长和估值优势，考虑买入。FedEx 的业绩增长和估值优势使其成为当前市场中较为吸引人的投资机会。</p>
+        <div class="card-footer">
+          <span class="pub-meta">CNBC Earnings · 2026-06-25</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.cnbc.com/2026/06/25/fedex-freight-takes-a-step-forward-in-its-independent-journey-heres-why-we-like-the-stock.html" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.cnbc.com/2026/06/25/fedex-freight-takes-a-step-forward-in-its-independent-journey-heres-why-we-like-the-stock.html" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#f59e0b"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#f59e0b15;color:#f59e0b">🔭 宏观观察</span>
+          <span class="sector-badge" style="background:#6b728020;color:#6b7280">宏观</span>
+        </div>
+        
+        <h2 class="card-title">核心通胀率上升</h2>
+        <div class="why-box">💡 核心通胀率上升</div>
+        <p class="analyst-take">当前的核心通胀率上升，主要受经济增长和货币政策的影响。投资者需要关注通胀率的变化对投资组合的影响，考虑对投资策略进行调整。当前的通胀率上升可能对其他资产类别产生影响，投资者需要保持关注。</p>
+        <div class="card-footer">
+          <span class="pub-meta">CNBC Markets · 2026-06-25</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.cnbc.com/2026/06/25/pce-inflation-report-may-2026-.html" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.cnbc.com/2026/06/25/pce-inflation-report-may-2026-.html" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#10b981"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#10b98115;color:#10b981">📈 买入关注</span>
+          <span class="sector-badge" style="background:#06b6d420;color:#06b6d4">工业</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$BA</span></div>
+        <h2 class="card-title">Boeing 新订单</h2>
+        <div class="why-box">💡 Boeing 新订单</div>
+        <p class="analyst-take">Boeing 的新订单显示出公司的市场竞争力和增长潜力。投资者需要关注公司的持续增长和估值优势，考虑买入。Boeing 的新订单和估值优势使其成为当前市场中较为吸引人的投资机会。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Bloomberg Markets · 2026-06-26</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.bloomberg.com/news/articles/2026-06-26/boeing-wins-jet-deal-from-china-southern-valued-at-3-62-billion" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.bloomberg.com/news/articles/2026-06-26/boeing-wins-jet-deal-from-china-southern-valued-at-3-62-billion" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#f59e0b"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#f59e0b15;color:#f59e0b">🔭 宏观观察</span>
+          <span class="sector-badge" style="background:#6b728020;color:#6b7280">宏观</span>
+        </div>
+        
+        <h2 class="card-title">美股预市走势</h2>
+        <div class="why-box">💡 美股预市走势</div>
+        <p class="analyst-take">当前的美股预市走势显示出市场的不确定性，投资者需要关注市场的变化和相关新闻，考虑对投资组合进行调整。当前的预市走势可能对其他资产类别产生影响，投资者需要保持关注。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Bloomberg Markets · 2026-06-26</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.bloomberg.com/news/articles/2026-06-26/us-premarket-movers-for-june-26-2026" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.bloomberg.com/news/articles/2026-06-26/us-premarket-movers-for-june-26-2026" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+</main>
+
+<div class="disclaimer">
+  ⚠️ 本站内容由 AI 自动生成，仅供参考，不构成任何投资建议。<br>
+  股市有风险，投资需谨慎，请结合自身判断做出决策。<br>
+  更新于 12:06 · 每天 06:00 自动更新
+</div>
+</body>
+</html>
