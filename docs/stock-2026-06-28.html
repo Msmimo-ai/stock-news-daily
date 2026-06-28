@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+<title>股市分析日报 · 2026-06-28</title>
+<style>
+  :root {
+    --bg:#f8fafc; --surface:#fff; --text:#1e293b; --text2:#64748b;
+    --border:#e2e8f0; --radius:16px; --shadow:0 2px 12px rgba(0,0,0,0.06);
+    --max:480px;
+  }
+  @media(prefers-color-scheme:dark) {
+    :root { --bg:#0f172a; --surface:#1e293b; --text:#f1f5f9; --text2:#94a3b8; --border:#334155; --shadow:0 2px 12px rgba(0,0,0,0.3); }
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);min-height:100vh;padding-bottom:48px}
+
+  .header{background:var(--surface);border-bottom:1px solid var(--border);padding:18px 16px 14px;position:sticky;top:0;z-index:100;backdrop-filter:blur(12px)}
+  .header-inner{max-width:var(--max);margin:0 auto;display:flex;justify-content:space-between;align-items:center}
+  .logo{font-size:19px;font-weight:800;letter-spacing:-.3px}
+  .logo span{background:linear-gradient(135deg,#10b981,#3b82f6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+  .header-right{text-align:right;font-size:12px;color:var(--text2);line-height:1.6}
+  .header-date{font-weight:700;font-size:13px;color:var(--text)}
+
+  .summary-bar{max-width:var(--max);margin:0 auto;padding:10px 16px 0;display:flex;gap:8px;font-size:12px}
+  .sum-chip{padding:3px 10px;border-radius:20px;font-weight:600}
+
+  main{max-width:var(--max);margin:0 auto;padding:14px 12px;display:flex;flex-direction:column;gap:12px}
+
+  .card{background:var(--surface);border-radius:var(--radius);border:1px solid var(--border);box-shadow:var(--shadow);overflow:hidden}
+  .card-signal-bar{height:3px}
+  .card-body{padding:13px 15px 15px}
+  .card-top{display:flex;gap:6px;align-items:center;margin-bottom:8px;flex-wrap:wrap}
+  .signal-badge{font-size:11px;font-weight:700;padding:3px 9px;border-radius:10px;white-space:nowrap}
+  .sector-badge{font-size:10px;font-weight:600;padding:2px 8px;border-radius:8px}
+  .ticker-row{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:8px}
+  .ticker{font-size:12px;font-weight:800;color:#3b82f6;background:#3b82f610;border:1px solid #3b82f630;padding:2px 8px;border-radius:6px;font-family:monospace}
+  .card-title{font-size:15px;font-weight:700;line-height:1.45;margin-bottom:9px;letter-spacing:-.2px}
+  .why-box{font-size:12px;color:var(--text2);background:var(--bg);border-left:3px solid #f59e0b;padding:6px 10px;border-radius:0 8px 8px 0;margin-bottom:10px;line-height:1.5}
+  .analyst-take{font-size:13px;color:var(--text2);line-height:1.7;margin-bottom:12px}
+  .card-footer{display:flex;justify-content:space-between;align-items:center;gap:8px}
+  .pub-meta{font-size:11px;color:var(--text2);flex-shrink:0}
+  .card-links{display:flex;gap:6px;flex-shrink:0}
+  .btn-zh{font-size:12px;font-weight:600;color:#fff;background:#3b82f6;padding:4px 10px;border-radius:8px;text-decoration:none;white-space:nowrap}
+  .btn-zh:hover{background:#2563eb}
+  .btn-src{font-size:11px;color:var(--text2);text-decoration:none;padding:4px 7px;border-radius:6px;border:1px solid var(--border);white-space:nowrap}
+  .btn-src:hover{color:var(--text)}
+
+  .disclaimer{max-width:var(--max);margin:20px auto 0;padding:12px 16px;font-size:11px;color:var(--text2);text-align:center;border-top:1px solid var(--border);line-height:1.7}
+</style>
+</head>
+<body>
+<header class="header">
+  <div class="header-inner">
+    <div class="logo">📈 <span>股市分析日报</span></div>
+    <div class="header-right">
+      <div class="header-date">2026-06-28</div>
+      <div>今日精选 10 篇</div>
+    </div>
+  </div>
+  <div class="summary-bar">
+    <span class="sum-chip" style="background:#10b98115;color:#10b981">📈 买入关注 7</span>
+    <span class="sum-chip" style="background:#ef444415;color:#ef4444">⚠️ 风险警示 2</span>
+    <span class="sum-chip" style="background:#f59e0b15;color:#f59e0b">🔭 宏观观察 1</span>
+  </div>
+</header>
+
+<main>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#10b981"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#10b98115;color:#10b981">📈 买入关注</span>
+          <span class="sector-badge" style="background:#3b82f620;color:#3b82f6">科技</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$MU</span></div>
+        <h2 class="card-title">Micron 利润率故事被低估</h2>
+        <div class="why-box">💡 Micron 的利润率增长潜力</div>
+        <p class="analyst-take">Micron 的利润率故事被市场低估，公司的成本控制和产品结构优化将带来更高的利润率，从而推动股价上涨。投资者应关注 Micron 的财报和业绩指标，考虑买入该股。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Seeking Alpha · 2026-06-28</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://seekingalpha.com/article/4918325-micron-the-margin-story-not-being-discussed-enough" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://seekingalpha.com/article/4918325-micron-the-margin-story-not-being-discussed-enough" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#10b981"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#10b98115;color:#10b981">📈 买入关注</span>
+          <span class="sector-badge" style="background:#f59e0b20;color:#f59e0b">能源</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$XOM</span><span class="ticker">$CVX</span></div>
+        <h2 class="card-title">能源股被低估</h2>
+        <div class="why-box">💡 能源股的低估值</div>
+        <p class="analyst-take">能源股被市场低估，当前的低价提供了买入机会。投资者应考虑买入能源股，尤其是那些具有强大业绩和增长潜力的公司。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Seeking Alpha · 2026-06-28</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://seekingalpha.com/article/4917828-the-market-is-dead-wrong-im-buying-dirt-cheap-energy-stocks" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://seekingalpha.com/article/4917828-the-market-is-dead-wrong-im-buying-dirt-cheap-energy-stocks" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#10b981"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#10b98115;color:#10b981">📈 买入关注</span>
+          <span class="sector-badge" style="background:#10b98120;color:#10b981">医疗</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$LLY</span></div>
+        <h2 class="card-title">Eli Lilly 股价上涨 7%</h2>
+        <div class="why-box">💡 Eli Lilly 的强大业绩</div>
+        <p class="analyst-take">Eli Lilly 的股价上涨 7% 是由于公司的强大业绩和增长潜力。投资者应关注 Eli Lilly 的财报和业绩指标，考虑买入该股。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Seeking Alpha · 2026-06-28</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://seekingalpha.com/article/4918321-why-eli-lilly-gained-7-percent-on-friday" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://seekingalpha.com/article/4918321-why-eli-lilly-gained-7-percent-on-friday" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#10b981"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#10b98115;color:#10b981">📈 买入关注</span>
+          <span class="sector-badge" style="background:#8b5cf620;color:#8b5cf6">金融</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$BRK.A</span></div>
+        <h2 class="card-title">伯克希尔哈撒韦可能会拯救市场</h2>
+        <div class="why-box">💡 伯克希尔哈撒韦的投资策略</div>
+        <p class="analyst-take">伯克希尔哈撒韦的投资策略和业绩可能会拯救市场，投资者应考虑买入伯克希尔哈撒韦的股票。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Seeking Alpha · 2026-06-28</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://seekingalpha.com/article/4918320-berkshire-may-just-save-you-from-likely-market-crash" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://seekingalpha.com/article/4918320-berkshire-may-just-save-you-from-likely-market-crash" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#10b981"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#10b98115;color:#10b981">📈 买入关注</span>
+          <span class="sector-badge" style="background:#3b82f620;color:#3b82f6">科技</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$MRVL</span></div>
+        <h2 class="card-title">Marvell Technology 的增长潜力</h2>
+        <div class="why-box">💡 Marvell Technology 的增长潜力</div>
+        <p class="analyst-take">Marvell Technology 的增长潜力和强大业绩使其成为一个买入机会。投资者应关注 Marvell Technology 的财报和业绩指标，考虑买入该股。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Seeking Alpha · 2026-06-28</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://seekingalpha.com/article/4918319-marvell-the-5-billion-guide-raise-behind-the-jensen-pop" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://seekingalpha.com/article/4918319-marvell-the-5-billion-guide-raise-behind-the-jensen-pop" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#10b981"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#10b98115;color:#10b981">📈 买入关注</span>
+          <span class="sector-badge" style="background:#3b82f620;color:#3b82f6">科技</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$COHR</span></div>
+        <h2 class="card-title">Coherent 的 AI 数据中心架构</h2>
+        <div class="why-box">💡 Coherent 的 AI 数据中心架构</div>
+        <p class="analyst-take">Coherent 的 AI 数据中心架构和增长潜力使其成为一个买入机会。投资者应关注 Coherent 的财报和业绩指标，考虑买入该股。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Seeking Alpha · 2026-06-28</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://seekingalpha.com/article/4918318-coherent-architect-of-post-electrical-ai-datacenters-against-compute-deflation-trap" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://seekingalpha.com/article/4918318-coherent-architect-of-post-electrical-ai-datacenters-against-compute-deflation-trap" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#ef4444"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#ef444415;color:#ef4444">⚠️ 风险警示</span>
+          <span class="sector-badge" style="background:#06b6d420;color:#06b6d4">工业</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$FAST</span></div>
+        <h2 class="card-title">Fastenal 的估值</h2>
+        <div class="why-box">💡 Fastenal 的估值</div>
+        <p class="analyst-take">Fastenal 的估值较高，投资者应谨慎考虑买入该股。应关注 Fastenal 的财报和业绩指标，评估其增长潜力和估值合理性。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Seeking Alpha · 2026-06-28</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://seekingalpha.com/article/4918314-fastenal-what-could-justify-valuation" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://seekingalpha.com/article/4918314-fastenal-what-could-justify-valuation" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#10b981"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#10b98115;color:#10b981">📈 买入关注</span>
+          <span class="sector-badge" style="background:#f9731620;color:#f97316">房地产</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$GRP.U</span></div>
+        <h2 class="card-title">Granite REIT 的低估值</h2>
+        <div class="why-box">💡 Granite REIT 的低估值</div>
+        <p class="analyst-take">Granite REIT 的低估值和增长潜力使其成为一个买入机会。投资者应关注 Granite REIT 的财报和业绩指标，考虑买入该股。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Seeking Alpha · 2026-06-28</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://seekingalpha.com/article/4918313-granite-reit-still-below-nav-still-underappreciated" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://seekingalpha.com/article/4918313-granite-reit-still-below-nav-still-underappreciated" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#f59e0b"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#f59e0b15;color:#f59e0b">🔭 宏观观察</span>
+          <span class="sector-badge" style="background:#6b728020;color:#6b7280">宏观</span>
+        </div>
+        
+        <h2 class="card-title">股市回调是健康的</h2>
+        <div class="why-box">💡 股市回调的健康性</div>
+        <p class="analyst-take">当前的股市回调是健康的，投资者不应过度担忧。应关注经济和市场的基本面，评估其增长潜力和风险。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Seeking Alpha · 2026-06-28</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://seekingalpha.com/article/4918317-stock-market-pullback-is-healthier-than-it-looks" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://seekingalpha.com/article/4918317-stock-market-pullback-is-healthier-than-it-looks" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#ef4444"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#ef444415;color:#ef4444">⚠️ 风险警示</span>
+          <span class="sector-badge" style="background:#6b728020;color:#6b7280">宏观</span>
+        </div>
+        
+        <h2 class="card-title">AI 债务泡沫风险</h2>
+        <div class="why-box">💡 AI 债务泡沫风险</div>
+        <p class="analyst-take">AI 债务泡沫风险较高，投资者应谨慎考虑债务投资。应关注经济和市场的基本面，评估其增长潜力和风险。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Bloomberg Markets · 2026-06-28</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.bloomberg.com/news/articles/2026-06-28/ai-bust-risks-ripple-effects-from-growth-to-credit-bis-says" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.bloomberg.com/news/articles/2026-06-28/ai-bust-risks-ripple-effects-from-growth-to-credit-bis-says" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+</main>
+
+<div class="disclaimer">
+  ⚠️ 本站内容由 AI 自动生成，仅供参考，不构成任何投资建议。<br>
+  股市有风险，投资需谨慎，请结合自身判断做出决策。<br>
+  更新于 11:41 · 每天 06:00 自动更新
+</div>
+</body>
+</html>
