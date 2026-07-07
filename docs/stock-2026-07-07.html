@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+<title>股市分析日报 · 2026-07-07</title>
+<style>
+  :root {
+    --bg:#f8fafc; --surface:#fff; --text:#1e293b; --text2:#64748b;
+    --border:#e2e8f0; --radius:16px; --shadow:0 2px 12px rgba(0,0,0,0.06);
+    --max:480px;
+  }
+  @media(prefers-color-scheme:dark) {
+    :root { --bg:#0f172a; --surface:#1e293b; --text:#f1f5f9; --text2:#94a3b8; --border:#334155; --shadow:0 2px 12px rgba(0,0,0,0.3); }
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);min-height:100vh;padding-bottom:48px}
+
+  .header{background:var(--surface);border-bottom:1px solid var(--border);padding:18px 16px 14px;position:sticky;top:0;z-index:100;backdrop-filter:blur(12px)}
+  .header-inner{max-width:var(--max);margin:0 auto;display:flex;justify-content:space-between;align-items:center}
+  .logo{font-size:19px;font-weight:800;letter-spacing:-.3px}
+  .logo span{background:linear-gradient(135deg,#10b981,#3b82f6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+  .header-right{text-align:right;font-size:12px;color:var(--text2);line-height:1.6}
+  .header-date{font-weight:700;font-size:13px;color:var(--text)}
+
+  .summary-bar{max-width:var(--max);margin:0 auto;padding:10px 16px 0;display:flex;gap:8px;font-size:12px}
+  .sum-chip{padding:3px 10px;border-radius:20px;font-weight:600}
+
+  main{max-width:var(--max);margin:0 auto;padding:14px 12px;display:flex;flex-direction:column;gap:12px}
+
+  .card{background:var(--surface);border-radius:var(--radius);border:1px solid var(--border);box-shadow:var(--shadow);overflow:hidden}
+  .card-signal-bar{height:3px}
+  .card-body{padding:13px 15px 15px}
+  .card-top{display:flex;gap:6px;align-items:center;margin-bottom:8px;flex-wrap:wrap}
+  .signal-badge{font-size:11px;font-weight:700;padding:3px 9px;border-radius:10px;white-space:nowrap}
+  .sector-badge{font-size:10px;font-weight:600;padding:2px 8px;border-radius:8px}
+  .ticker-row{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:8px}
+  .ticker{font-size:12px;font-weight:800;color:#3b82f6;background:#3b82f610;border:1px solid #3b82f630;padding:2px 8px;border-radius:6px;font-family:monospace}
+  .card-title{font-size:15px;font-weight:700;line-height:1.45;margin-bottom:9px;letter-spacing:-.2px}
+  .why-box{font-size:12px;color:var(--text2);background:var(--bg);border-left:3px solid #f59e0b;padding:6px 10px;border-radius:0 8px 8px 0;margin-bottom:10px;line-height:1.5}
+  .analyst-take{font-size:13px;color:var(--text2);line-height:1.7;margin-bottom:12px}
+  .card-footer{display:flex;justify-content:space-between;align-items:center;gap:8px}
+  .pub-meta{font-size:11px;color:var(--text2);flex-shrink:0}
+  .card-links{display:flex;gap:6px;flex-shrink:0}
+  .btn-zh{font-size:12px;font-weight:600;color:#fff;background:#3b82f6;padding:4px 10px;border-radius:8px;text-decoration:none;white-space:nowrap}
+  .btn-zh:hover{background:#2563eb}
+  .btn-src{font-size:11px;color:var(--text2);text-decoration:none;padding:4px 7px;border-radius:6px;border:1px solid var(--border);white-space:nowrap}
+  .btn-src:hover{color:var(--text)}
+
+  .disclaimer{max-width:var(--max);margin:20px auto 0;padding:12px 16px;font-size:11px;color:var(--text2);text-align:center;border-top:1px solid var(--border);line-height:1.7}
+</style>
+</head>
+<body>
+<header class="header">
+  <div class="header-inner">
+    <div class="logo">📈 <span>股市分析日报</span></div>
+    <div class="header-right">
+      <div class="header-date">2026-07-07</div>
+      <div>今日精选 10 篇</div>
+    </div>
+  </div>
+  <div class="summary-bar">
+    <span class="sum-chip" style="background:#10b98115;color:#10b981">📈 买入关注 5</span>
+    <span class="sum-chip" style="background:#ef444415;color:#ef4444">⚠️ 风险警示 4</span>
+    <span class="sum-chip" style="background:#f59e0b15;color:#f59e0b">🔭 宏观观察 1</span>
+  </div>
+</header>
+
+<main>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#10b981"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#10b98115;color:#10b981">📈 买入关注</span>
+          <span class="sector-badge" style="background:#3b82f620;color:#3b82f6">科技</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$SPACEX</span></div>
+        <h2 class="card-title">SpaceX加入纳斯达克100</h2>
+        <div class="why-box">💡 SpaceX加入纳斯达克100</div>
+        <p class="analyst-take">SpaceX加入纳斯达克100指数，这意味着该公司的市值和影响力将进一步提升。作为一家领先的航天技术公司，SpaceX的加入可能会吸引更多投资者的关注和资金。同时，SpaceX的业务增长和技术创新也将推动其股价上涨。因此，建议投资者关注SpaceX的发展和其股价的走势，考虑买入该公司的股票。</p>
+        <div class="card-footer">
+          <span class="pub-meta">MarketWatch · 2026-07-07</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.marketwatch.com/story/the-nasdaq-100-has-been-far-more-volatile-than-the-s-p-500-now-add-spacex-to-the-mix-cd397c36?mod=mw_rss_topstories" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.marketwatch.com/story/the-nasdaq-100-has-been-far-more-volatile-than-the-s-p-500-now-add-spacex-to-the-mix-cd397c36?mod=mw_rss_topstories" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#ef4444"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#ef444415;color:#ef4444">⚠️ 风险警示</span>
+          <span class="sector-badge" style="background:#3b82f620;color:#3b82f6">科技</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$SSNLF</span></div>
+        <h2 class="card-title">三星电子利润大幅增长</h2>
+        <div class="why-box">💡 三星电子利润大幅增长</div>
+        <p class="analyst-take">三星电子的利润大幅增长，但投资者对其未来增长前景的担忧导致股价下跌。这意味着投资者应该谨慎对待该公司的股价走势，考虑减仓或观望。同时，三星电子的业务增长和技术创新也将面临来自其他竞争者的挑战，因此投资者应该密切关注该公司的发展和行业趋势。</p>
+        <div class="card-footer">
+          <span class="pub-meta">CNBC · 2026-07-07</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.cnbc.com/2026/07/07/samsung-electronics-preliminary-second-quarter-profit-hits-fresh-high.html" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.cnbc.com/2026/07/07/samsung-electronics-preliminary-second-quarter-profit-hits-fresh-high.html" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#10b981"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#10b98115;color:#10b981">📈 买入关注</span>
+          <span class="sector-badge" style="background:#8b5cf620;color:#8b5cf6">金融</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$V</span></div>
+        <h2 class="card-title">Visa全球技术基础设施</h2>
+        <div class="why-box">💡 Visa全球技术基础设施</div>
+        <p class="analyst-take">Visa的全球技术基础设施是其业务增长的关键驱动力。作为一家领先的支付技术公司，Visa的技术创新和基础设施建设将推动其股价上涨。同时，Visa的业务增长也将受益于全球电子支付的发展趋势。因此，建议投资者关注Visa的发展和其股价的走势，考虑买入该公司的股票。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Seeking Alpha · 2026-07-07</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://seekingalpha.com/article/4920295-visa-global-technology-infrastructure-behind-modern-payments" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://seekingalpha.com/article/4920295-visa-global-technology-infrastructure-behind-modern-payments" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#ef4444"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#ef444415;color:#ef4444">⚠️ 风险警示</span>
+          <span class="sector-badge" style="background:#3b82f620;color:#3b82f6">科技</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$SPACEX</span></div>
+        <h2 class="card-title">SpaceX纳斯达克100加入警告</h2>
+        <div class="why-box">💡 SpaceX纳斯达克100加入警告</div>
+        <p class="analyst-take">SpaceX加入纳斯达克100指数可能会导致其股价出现调整。历史数据显示，加入纳斯达克100指数的公司往往会经历一段时间的股价调整。因此，投资者应该谨慎对待SpaceX的股价走势，考虑减仓或观望。同时，SpaceX的业务增长和技术创新也将面临来自其他竞争者的挑战，因此投资者应该密切关注该公司的发展和行业趋势。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Seeking Alpha · 2026-07-07</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://seekingalpha.com/article/4920288-spacex-nasdaq-100-inclusion-flashes-a-historic-sell-the-news-warning" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://seekingalpha.com/article/4920288-spacex-nasdaq-100-inclusion-flashes-a-historic-sell-the-news-warning" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#10b981"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#10b98115;color:#10b981">📈 买入关注</span>
+          <span class="sector-badge" style="background:#3b82f620;color:#3b82f6">科技</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$MU</span></div>
+        <h2 class="card-title">Micron记忆周期</h2>
+        <div class="why-box">💡 Micron记忆周期</div>
+        <p class="analyst-take">Micron的记忆周期将推动其业务增长和股价上涨。作为一家领先的记忆芯片制造商，Micron的技术创新和生产能力将受益于全球记忆芯片需求的增长。同时，Micron的业务增长也将受益于其在5G和人工智能等领域的布局。因此，建议投资者关注Micron的发展和其股价的走势，考虑买入该公司的股票。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Seeking Alpha · 2026-07-07</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://seekingalpha.com/article/4920168-micron-why-i-believe-this-memory-cycle-isnt-fully-priced-in-yet" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://seekingalpha.com/article/4920168-micron-why-i-believe-this-memory-cycle-isnt-fully-priced-in-yet" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#10b981"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#10b98115;color:#10b981">📈 买入关注</span>
+          <span class="sector-badge" style="background:#3b82f620;color:#3b82f6">科技</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$AMZN</span></div>
+        <h2 class="card-title">Amazon债券发行</h2>
+        <div class="why-box">💡 Amazon债券发行</div>
+        <p class="analyst-take">Amazon的债券发行将为其业务增长提供资金支持。作为一家领先的电子商务公司，Amazon的技术创新和基础设施建设将推动其股价上涨。同时，Amazon的业务增长也将受益于全球电子商务的发展趋势。因此，建议投资者关注Amazon的发展和其股价的走势，考虑买入该公司的股票。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Bloomberg · 2026-07-07</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.bloomberg.com/news/articles/2026-07-07/amazon-returns-to-us-bond-market-to-fund-ai-infrastructure-build" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.bloomberg.com/news/articles/2026-07-07/amazon-returns-to-us-bond-market-to-fund-ai-infrastructure-build" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#ef4444"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#ef444415;color:#ef4444">⚠️ 风险警示</span>
+          <span class="sector-badge" style="background:#06b6d420;color:#06b6d4">工业</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$AUTODOC</span></div>
+        <h2 class="card-title">Autodoc债务融资</h2>
+        <div class="why-box">💡 Autodoc债务融资</div>
+        <p class="analyst-take">Autodoc的债务融资可能会增加其财务风险。作为一家汽车零部件制造商，Autodoc的业务增长和技术创新将面临来自其他竞争者的挑战。同时，Autodoc的债务融资也将增加其财务负担，可能会影响其股价走势。因此，投资者应该谨慎对待Autodoc的股价走势，考虑减仓或观望。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Bloomberg · 2026-07-07</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.bloomberg.com/news/articles/2026-07-07/autodoc-is-raising-530-million-loan-to-buy-out-apollo-s-stake" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.bloomberg.com/news/articles/2026-07-07/autodoc-is-raising-530-million-loan-to-buy-out-apollo-s-stake" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#10b981"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#10b98115;color:#10b981">📈 买入关注</span>
+          <span class="sector-badge" style="background:#8b5cf620;color:#8b5cf6">金融</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$CBZ</span></div>
+        <h2 class="card-title">CBIZ并购</h2>
+        <div class="why-box">💡 CBIZ并购</div>
+        <p class="analyst-take">CBIZ的并购将推动其业务增长和股价上涨。作为一家领先的会计和咨询公司，CBIZ的技术创新和基础设施建设将受益于全球会计和咨询服务的发展趋势。同时，CBIZ的业务增长也将受益于其在人工智能和数据分析等领域的布局。因此，建议投资者关注CBIZ的发展和其股价的走势，考虑买入该公司的股票。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Bloomberg · 2026-07-07</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.bloomberg.com/news/articles/2026-07-07/accounting-firm-cbiz-urged-by-activist-investor-to-pursue-m-a" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.bloomberg.com/news/articles/2026-07-07/accounting-firm-cbiz-urged-by-activist-investor-to-pursue-m-a" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#ef4444"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#ef444415;color:#ef4444">⚠️ 风险警示</span>
+          <span class="sector-badge" style="background:#3b82f620;color:#3b82f6">科技</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$SSNLF</span></div>
+        <h2 class="card-title">三星电子股价下跌</h2>
+        <div class="why-box">💡 三星电子股价下跌</div>
+        <p class="analyst-take">三星电子的股价下跌可能会继续。作为一家领先的科技公司，三星电子的业务增长和技术创新将面临来自其他竞争者的挑战。同时，三星电子的股价下跌也将受到全球科技行业趋势的影响。因此，投资者应该谨慎对待三星电子的股价走势，考虑减仓或观望。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Yahoo Finance · 2026-07-07</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://finance.yahoo.com/technology/article/samsungs-19-fold-rise-in-profit-fails-to-impress-investors-as-ai-chip-stocks-fall-120636336.html" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://finance.yahoo.com/technology/article/samsungs-19-fold-rise-in-profit-fails-to-impress-investors-as-ai-chip-stocks-fall-120636336.html" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#f59e0b"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#f59e0b15;color:#f59e0b">🔭 宏观观察</span>
+          <span class="sector-badge" style="background:#6b728020;color:#6b7280">宏观</span>
+        </div>
+        
+        <h2 class="card-title">全球股市走势</h2>
+        <div class="why-box">💡 全球股市走势</div>
+        <p class="analyst-take">全球股市走势将受到多种因素的影响，包括经济增长、利率和地缘政治等。投资者应该密切关注全球经济趋势和政策变化，调整投资策略以应对潜在风险和机会。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Bloomberg · 2026-07-07</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.bloomberg.com/news/articles/2026-07-07/us-stocks-fall-as-chipmakers-tumble-and-oil-climbs-markets-wrap" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.bloomberg.com/news/articles/2026-07-07/us-stocks-fall-as-chipmakers-tumble-and-oil-climbs-markets-wrap" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+</main>
+
+<div class="disclaimer">
+  ⚠️ 本站内容由 AI 自动生成，仅供参考，不构成任何投资建议。<br>
+  股市有风险，投资需谨慎，请结合自身判断做出决策。<br>
+  更新于 12:21 · 每天 06:00 自动更新
+</div>
+</body>
+</html>
