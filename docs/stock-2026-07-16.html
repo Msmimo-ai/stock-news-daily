@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+<title>股市分析日报 · 2026-07-16</title>
+<style>
+  :root {
+    --bg:#f8fafc; --surface:#fff; --text:#1e293b; --text2:#64748b;
+    --border:#e2e8f0; --radius:16px; --shadow:0 2px 12px rgba(0,0,0,0.06);
+    --max:480px;
+  }
+  @media(prefers-color-scheme:dark) {
+    :root { --bg:#0f172a; --surface:#1e293b; --text:#f1f5f9; --text2:#94a3b8; --border:#334155; --shadow:0 2px 12px rgba(0,0,0,0.3); }
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);min-height:100vh;padding-bottom:48px}
+
+  .header{background:var(--surface);border-bottom:1px solid var(--border);padding:18px 16px 14px;position:sticky;top:0;z-index:100;backdrop-filter:blur(12px)}
+  .header-inner{max-width:var(--max);margin:0 auto;display:flex;justify-content:space-between;align-items:center}
+  .logo{font-size:19px;font-weight:800;letter-spacing:-.3px}
+  .logo span{background:linear-gradient(135deg,#10b981,#3b82f6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+  .header-right{text-align:right;font-size:12px;color:var(--text2);line-height:1.6}
+  .header-date{font-weight:700;font-size:13px;color:var(--text)}
+
+  .summary-bar{max-width:var(--max);margin:0 auto;padding:10px 16px 0;display:flex;gap:8px;font-size:12px}
+  .sum-chip{padding:3px 10px;border-radius:20px;font-weight:600}
+
+  main{max-width:var(--max);margin:0 auto;padding:14px 12px;display:flex;flex-direction:column;gap:12px}
+
+  .card{background:var(--surface);border-radius:var(--radius);border:1px solid var(--border);box-shadow:var(--shadow);overflow:hidden}
+  .card-signal-bar{height:3px}
+  .card-body{padding:13px 15px 15px}
+  .card-top{display:flex;gap:6px;align-items:center;margin-bottom:8px;flex-wrap:wrap}
+  .signal-badge{font-size:11px;font-weight:700;padding:3px 9px;border-radius:10px;white-space:nowrap}
+  .sector-badge{font-size:10px;font-weight:600;padding:2px 8px;border-radius:8px}
+  .ticker-row{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:8px}
+  .ticker{font-size:12px;font-weight:800;color:#3b82f6;background:#3b82f610;border:1px solid #3b82f630;padding:2px 8px;border-radius:6px;font-family:monospace}
+  .card-title{font-size:15px;font-weight:700;line-height:1.45;margin-bottom:9px;letter-spacing:-.2px}
+  .why-box{font-size:12px;color:var(--text2);background:var(--bg);border-left:3px solid #f59e0b;padding:6px 10px;border-radius:0 8px 8px 0;margin-bottom:10px;line-height:1.5}
+  .analyst-take{font-size:13px;color:var(--text2);line-height:1.7;margin-bottom:12px}
+  .card-footer{display:flex;justify-content:space-between;align-items:center;gap:8px}
+  .pub-meta{font-size:11px;color:var(--text2);flex-shrink:0}
+  .card-links{display:flex;gap:6px;flex-shrink:0}
+  .btn-zh{font-size:12px;font-weight:600;color:#fff;background:#3b82f6;padding:4px 10px;border-radius:8px;text-decoration:none;white-space:nowrap}
+  .btn-zh:hover{background:#2563eb}
+  .btn-src{font-size:11px;color:var(--text2);text-decoration:none;padding:4px 7px;border-radius:6px;border:1px solid var(--border);white-space:nowrap}
+  .btn-src:hover{color:var(--text)}
+
+  .disclaimer{max-width:var(--max);margin:20px auto 0;padding:12px 16px;font-size:11px;color:var(--text2);text-align:center;border-top:1px solid var(--border);line-height:1.7}
+</style>
+</head>
+<body>
+<header class="header">
+  <div class="header-inner">
+    <div class="logo">📈 <span>股市分析日报</span></div>
+    <div class="header-right">
+      <div class="header-date">2026-07-16</div>
+      <div>今日精选 10 篇</div>
+    </div>
+  </div>
+  <div class="summary-bar">
+    <span class="sum-chip" style="background:#10b98115;color:#10b981">📈 买入关注 6</span>
+    <span class="sum-chip" style="background:#ef444415;color:#ef4444">⚠️ 风险警示 1</span>
+    <span class="sum-chip" style="background:#f59e0b15;color:#f59e0b">🔭 宏观观察 3</span>
+  </div>
+</header>
+
+<main>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#10b981"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#10b98115;color:#10b981">📈 买入关注</span>
+          <span class="sector-badge" style="background:#3b82f620;color:#3b82f6">科技</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$TSM</span></div>
+        <h2 class="card-title">TSMC 第二季度利润飙升 77%</h2>
+        <div class="why-box">💡 AI 芯片需求强劲</div>
+        <p class="analyst-take">TSMC 第二季度利润大幅增长，主要得益于 AI 芯片需求的强劲增长。公司宣布将额外投资 100 亿美元在亚利桑那州，这将进一步提高其在 AI 芯片市场的竞争力。我们认为 TSMC 的增长前景仍然乐观，建议投资者继续持有其股票。</p>
+        <div class="card-footer">
+          <span class="pub-meta">CNBC Earnings · 2026-07-16</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.cnbc.com/2026/07/16/tsmc-second-quarter-profit-.html" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.cnbc.com/2026/07/16/tsmc-second-quarter-profit-.html" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#10b981"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#10b98115;color:#10b981">📈 买入关注</span>
+          <span class="sector-badge" style="background:#10b98120;color:#10b981">医疗</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$UNH</span></div>
+        <h2 class="card-title">UnitedHealth 第二季度盈利超预期</h2>
+        <div class="why-box">💡 盈利超预期</div>
+        <p class="analyst-take">UnitedHealth 第二季度盈利超预期，主要得益于其医疗管理和产品设计的改进。公司同时提高了全年盈利预测，我们认为其增长前景仍然乐观，建议投资者继续持有其股票。</p>
+        <div class="card-footer">
+          <span class="pub-meta">CNBC Earnings · 2026-07-16</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.cnbc.com/2026/07/16/unitedhealth-group-unh-earnings-q2-2026.html" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.cnbc.com/2026/07/16/unitedhealth-group-unh-earnings-q2-2026.html" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#10b981"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#10b98115;color:#10b981">📈 买入关注</span>
+          <span class="sector-badge" style="background:#8b5cf620;color:#8b5cf6">金融</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$MS</span></div>
+        <h2 class="card-title">摩根士丹利第二季度收入和利润创纪录</h2>
+        <div class="why-box">💡 收入和利润创纪录</div>
+        <p class="analyst-take">摩根士丹利第二季度收入和利润创纪录，主要得益于其股票交易业务的强劲增长。我们认为公司的增长前景仍然乐观，建议投资者继续持有其股票。</p>
+        <div class="card-footer">
+          <span class="pub-meta">CNBC Earnings · 2026-07-15</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.cnbc.com/2026/07/15/morgan-stanley-ms-earnings-q2-2026-.html" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.cnbc.com/2026/07/15/morgan-stanley-ms-earnings-q2-2026-.html" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#f59e0b"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#f59e0b15;color:#f59e0b">🔭 宏观观察</span>
+          <span class="sector-badge" style="background:#6b728020;color:#6b7280">宏观</span>
+        </div>
+        
+        <h2 class="card-title">美国 6 月份消费者价格指数上涨 3.5%</h2>
+        <div class="why-box">💡 通胀压力缓解</div>
+        <p class="analyst-take">美国 6 月份消费者价格指数上涨 3.5%，低于预期的 3.8%。这表明美国的通胀压力可能正在缓解，我们将继续关注后续的经济数据。</p>
+        <div class="card-footer">
+          <span class="pub-meta">CNBC Markets · 2026-07-14</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.cnbc.com/2026/07/14/consumer-price-index-inflation-report-june-2026.html" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.cnbc.com/2026/07/14/consumer-price-index-inflation-report-june-2026.html" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#10b981"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#10b98115;color:#10b981">📈 买入关注</span>
+          <span class="sector-badge" style="background:#3b82f620;color:#3b82f6">科技</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$TSM</span></div>
+        <h2 class="card-title">TSMC 将额外投资 100 亿美元在亚利桑那州</h2>
+        <div class="why-box">💡 投资扩张</div>
+        <p class="analyst-take">TSMC 将额外投资 100 亿美元在亚利桑那州，这将进一步提高其在 AI 芯片市场的竞争力。我们认为公司的增长前景仍然乐观，建议投资者继续持有其股票。</p>
+        <div class="card-footer">
+          <span class="pub-meta">CNBC Earnings · 2026-07-16</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.cnbc.com/2026/07/16/tsmc-second-quarter-profit-.html" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.cnbc.com/2026/07/16/tsmc-second-quarter-profit-.html" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#ef4444"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#ef444415;color:#ef4444">⚠️ 风险警示</span>
+          <span class="sector-badge" style="background:#3b82f620;color:#3b82f6">科技</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$IBM</span></div>
+        <h2 class="card-title">IBM 第二季度盈利警告</h2>
+        <div class="why-box">💡 盈利警告</div>
+        <p class="analyst-take">IBM 第二季度盈利警告，主要得益于其软件和基础设施业务的弱势。我们认为公司的增长前景不确定，建议投资者谨慎对待其股票。</p>
+        <div class="card-footer">
+          <span class="pub-meta">CNBC Earnings · 2026-07-14</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.cnbc.com/2026/07/14/ibm-warns-second-quarter-earnings-fell-short-of-expectations.html" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.cnbc.com/2026/07/14/ibm-warns-second-quarter-earnings-fell-short-of-expectations.html" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#f59e0b"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#f59e0b15;color:#f59e0b">🔭 宏观观察</span>
+          <span class="sector-badge" style="background:#6b728020;color:#6b7280">宏观</span>
+        </div>
+        
+        <h2 class="card-title">中国第二季度 GDP 增长 4.5%</h2>
+        <div class="why-box">💡 经济增长放缓</div>
+        <p class="analyst-take">中国第二季度 GDP 增长 4.5%，低于预期的 5%。这表明中国的经济增长可能正在放缓，我们将继续关注后续的经济数据。</p>
+        <div class="card-footer">
+          <span class="pub-meta">CNBC Markets · 2026-07-15</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.cnbc.com/2026/07/15/china-gdp-retail-sales-investment-june-.html" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.cnbc.com/2026/07/15/china-gdp-retail-sales-investment-june-.html" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#f59e0b"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#f59e0b15;color:#f59e0b">🔭 宏观观察</span>
+          <span class="sector-badge" style="background:#6b728020;color:#6b7280">宏观</span>
+        </div>
+        
+        <h2 class="card-title">美国 6 月份批发价格指数下降 0.3%</h2>
+        <div class="why-box">💡 通胀压力缓解</div>
+        <p class="analyst-take">美国 6 月份批发价格指数下降 0.3%，表明美国的通胀压力可能正在缓解，我们将继续关注后续的经济数据。</p>
+        <div class="card-footer">
+          <span class="pub-meta">CNBC Markets · 2026-07-15</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.cnbc.com/2026/07/15/wholesale-inflation-june-2026-.html" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.cnbc.com/2026/07/15/wholesale-inflation-june-2026-.html" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#10b981"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#10b98115;color:#10b981">📈 买入关注</span>
+          <span class="sector-badge" style="background:#8b5cf620;color:#8b5cf6">金融</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$MS</span></div>
+        <h2 class="card-title">摩根士丹利将目标价上调至 420 美元</h2>
+        <div class="why-box">💡 目标价上调</div>
+        <p class="analyst-take">摩根士丹利将目标价上调至 420 美元，主要得益于其股票交易业务的强劲增长。我们认为公司的增长前景仍然乐观，建议投资者继续持有其股票。</p>
+        <div class="card-footer">
+          <span class="pub-meta">CNBC Earnings · 2026-07-14</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.cnbc.com/2026/07/14/were-raising-our-price-target-on-goldman-sachs-after-a-blowout-quarter.html" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.cnbc.com/2026/07/14/were-raising-our-price-target-on-goldman-sachs-after-a-blowout-quarter.html" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#10b981"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#10b98115;color:#10b981">📈 买入关注</span>
+          <span class="sector-badge" style="background:#3b82f620;color:#3b82f6">科技</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$TSM</span></div>
+        <h2 class="card-title">TSMC 预计 AI 芯片需求将持续三年的增长</h2>
+        <div class="why-box">💡 AI 芯片需求增长</div>
+        <p class="analyst-take">TSMC 预计 AI 芯片需求将持续三年的增长，这将进一步提高其在 AI 芯片市场的竞争力。我们认为公司的增长前景仍然乐观，建议投资者继续持有其股票。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Bloomberg Markets · 2026-07-16</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.bloomberg.com/news/newsletters/2026-07-16/tsmc-says-ai-boom-will-go-another-three-years-defying-skeptics" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.bloomberg.com/news/newsletters/2026-07-16/tsmc-says-ai-boom-will-go-another-three-years-defying-skeptics" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+</main>
+
+<div class="disclaimer">
+  ⚠️ 本站内容由 AI 自动生成，仅供参考，不构成任何投资建议。<br>
+  股市有风险，投资需谨慎，请结合自身判断做出决策。<br>
+  更新于 11:26 · 每天 06:00 自动更新
+</div>
+</body>
+</html>
