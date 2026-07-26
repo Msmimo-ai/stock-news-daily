@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+<title>股市分析日报 · 2026-07-26</title>
+<style>
+  :root {
+    --bg:#f8fafc; --surface:#fff; --text:#1e293b; --text2:#64748b;
+    --border:#e2e8f0; --radius:16px; --shadow:0 2px 12px rgba(0,0,0,0.06);
+    --max:480px;
+  }
+  @media(prefers-color-scheme:dark) {
+    :root { --bg:#0f172a; --surface:#1e293b; --text:#f1f5f9; --text2:#94a3b8; --border:#334155; --shadow:0 2px 12px rgba(0,0,0,0.3); }
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);min-height:100vh;padding-bottom:48px}
+
+  .header{background:var(--surface);border-bottom:1px solid var(--border);padding:18px 16px 14px;position:sticky;top:0;z-index:100;backdrop-filter:blur(12px)}
+  .header-inner{max-width:var(--max);margin:0 auto;display:flex;justify-content:space-between;align-items:center}
+  .logo{font-size:19px;font-weight:800;letter-spacing:-.3px}
+  .logo span{background:linear-gradient(135deg,#10b981,#3b82f6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+  .header-right{text-align:right;font-size:12px;color:var(--text2);line-height:1.6}
+  .header-date{font-weight:700;font-size:13px;color:var(--text)}
+
+  .summary-bar{max-width:var(--max);margin:0 auto;padding:10px 16px 0;display:flex;gap:8px;font-size:12px}
+  .sum-chip{padding:3px 10px;border-radius:20px;font-weight:600}
+
+  main{max-width:var(--max);margin:0 auto;padding:14px 12px;display:flex;flex-direction:column;gap:12px}
+
+  .card{background:var(--surface);border-radius:var(--radius);border:1px solid var(--border);box-shadow:var(--shadow);overflow:hidden}
+  .card-signal-bar{height:3px}
+  .card-body{padding:13px 15px 15px}
+  .card-top{display:flex;gap:6px;align-items:center;margin-bottom:8px;flex-wrap:wrap}
+  .signal-badge{font-size:11px;font-weight:700;padding:3px 9px;border-radius:10px;white-space:nowrap}
+  .sector-badge{font-size:10px;font-weight:600;padding:2px 8px;border-radius:8px}
+  .ticker-row{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:8px}
+  .ticker{font-size:12px;font-weight:800;color:#3b82f6;background:#3b82f610;border:1px solid #3b82f630;padding:2px 8px;border-radius:6px;font-family:monospace}
+  .card-title{font-size:15px;font-weight:700;line-height:1.45;margin-bottom:9px;letter-spacing:-.2px}
+  .why-box{font-size:12px;color:var(--text2);background:var(--bg);border-left:3px solid #f59e0b;padding:6px 10px;border-radius:0 8px 8px 0;margin-bottom:10px;line-height:1.5}
+  .analyst-take{font-size:13px;color:var(--text2);line-height:1.7;margin-bottom:12px}
+  .card-footer{display:flex;justify-content:space-between;align-items:center;gap:8px}
+  .pub-meta{font-size:11px;color:var(--text2);flex-shrink:0}
+  .card-links{display:flex;gap:6px;flex-shrink:0}
+  .btn-zh{font-size:12px;font-weight:600;color:#fff;background:#3b82f6;padding:4px 10px;border-radius:8px;text-decoration:none;white-space:nowrap}
+  .btn-zh:hover{background:#2563eb}
+  .btn-src{font-size:11px;color:var(--text2);text-decoration:none;padding:4px 7px;border-radius:6px;border:1px solid var(--border);white-space:nowrap}
+  .btn-src:hover{color:var(--text)}
+
+  .disclaimer{max-width:var(--max);margin:20px auto 0;padding:12px 16px;font-size:11px;color:var(--text2);text-align:center;border-top:1px solid var(--border);line-height:1.7}
+</style>
+</head>
+<body>
+<header class="header">
+  <div class="header-inner">
+    <div class="logo">📈 <span>股市分析日报</span></div>
+    <div class="header-right">
+      <div class="header-date">2026-07-26</div>
+      <div>今日精选 10 篇</div>
+    </div>
+  </div>
+  <div class="summary-bar">
+    <span class="sum-chip" style="background:#10b98115;color:#10b981">📈 买入关注 6</span>
+    <span class="sum-chip" style="background:#ef444415;color:#ef4444">⚠️ 风险警示 4</span>
+    <span class="sum-chip" style="background:#f59e0b15;color:#f59e0b">🔭 宏观观察 0</span>
+  </div>
+</header>
+
+<main>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#10b981"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#10b98115;color:#10b981">📈 买入关注</span>
+          <span class="sector-badge" style="background:#3b82f620;color:#3b82f6">科技</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$INTC</span></div>
+        <h2 class="card-title">英特尔CEO任期内公司业绩大幅提升</h2>
+        <div class="why-box">💡 英特尔CEO任期内公司业绩大幅提升</div>
+        <p class="analyst-take">英特尔近期财报显示，公司业绩大幅提升，尤其是在人工智能领域的增长非常显著。CEO Lip-Bu Tan的领导下，公司正在经历一场显著的转型，未来前景看好。投资者可以考虑买入英特尔的股票，尤其是在人工智能和半导体领域的投资者。英特尔的强劲业绩和增长潜力使其成为一个值得关注的投资机会。</p>
+        <div class="card-footer">
+          <span class="pub-meta">CNBC Earnings · 2026-07-24</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.cnbc.com/2026/07/23/intels-turnaround-under-ceo-lip-bu-tan-gains-steam-with-another-strong-quarter.html" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.cnbc.com/2026/07/23/intels-turnaround-under-ceo-lip-bu-tan-gains-steam-with-another-strong-quarter.html" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#ef4444"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#ef444415;color:#ef4444">⚠️ 风险警示</span>
+          <span class="sector-badge" style="background:#6b728020;color:#6b7280">宏观</span>
+        </div>
+        
+        <h2 class="card-title">特朗普新关税计划引发贸易伙伴反对</h2>
+        <div class="why-box">💡 特朗普新关税计划引发贸易伙伴反对</div>
+        <p class="analyst-take">特朗普的新关税计划引发了贸易伙伴的反对，可能会导致全球贸易紧张局势加剧。投资者需要密切关注这一事件的发展，尤其是那些在国际贸易领域有投资的投资者。关税战可能会对全球经济产生负面影响，投资者需要谨慎对待这一风险。</p>
+        <div class="card-footer">
+          <span class="pub-meta">CNBC Markets · 2026-07-24</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.cnbc.com/2026/07/24/trump-global-tariffs-trade-imbalance-forced-labor.html" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.cnbc.com/2026/07/24/trump-global-tariffs-trade-imbalance-forced-labor.html" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#10b981"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#10b98115;color:#10b981">📈 买入关注</span>
+          <span class="sector-badge" style="background:#3b82f620;color:#3b82f6">科技</span>
+        </div>
+        
+        <h2 class="card-title">人工智能股票大幅下跌，但可能会拯救牛市</h2>
+        <div class="why-box">💡 人工智能股票大幅下跌，但可能会拯救牛市</div>
+        <p class="analyst-take">人工智能股票近期大幅下跌，但这可能会成为一个买入机会。人工智能领域的增长前景仍然看好，投资者可以考虑在低位买入相关股票。同时，人工智能的发展也可能会推动整个科技行业的增长，投资者可以关注这一领域的投资机会。</p>
+        <div class="card-footer">
+          <span class="pub-meta">MarketWatch · 2026-07-25</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.marketwatch.com/story/yes-the-ai-stock-selloff-looks-terrifying-but-it-might-actually-save-the-bull-market-3bef59be?mod=mw_rss_topstories" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.marketwatch.com/story/yes-the-ai-stock-selloff-looks-terrifying-but-it-might-actually-save-the-bull-market-3bef59be?mod=mw_rss_topstories" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#10b981"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#10b98115;color:#10b981">📈 买入关注</span>
+          <span class="sector-badge" style="background:#10b98120;color:#10b981">医疗</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$HIMS</span></div>
+        <h2 class="card-title">FDA小组支持四种肽类药物，Hims & Hers股票受到关注</h2>
+        <div class="why-box">💡 FDA小组支持四种肽类药物，Hims & Hers股票受到关注</div>
+        <p class="analyst-take">FDA小组支持四种肽类药物，这可能会对Hims & Hers公司的股票产生积极影响。投资者可以考虑买入该公司的股票，尤其是在医疗和生物技术领域的投资者。FDA的支持可能会推动公司的增长和发展，投资者可以关注这一领域的投资机会。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Yahoo Finance · 2026-07-25</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://finance.yahoo.com/healthcare/articles/fda-panel-narrowly-backs-four-100116556.html" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://finance.yahoo.com/healthcare/articles/fda-panel-narrowly-backs-four-100116556.html" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#ef4444"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#ef444415;color:#ef4444">⚠️ 风险警示</span>
+          <span class="sector-badge" style="background:#f59e0b20;color:#f59e0b">能源</span>
+        </div>
+        
+        <h2 class="card-title">油价可能下跌，但汽油价格不会，能源需求大幅下降</h2>
+        <div class="why-box">💡 油价可能下跌，但汽油价格不会，能源需求大幅下降</div>
+        <p class="analyst-take">油价可能下跌，但汽油价格不会，能源需求大幅下降可能会对能源行业产生负面影响。投资者需要密切关注这一事件的发展，尤其是那些在能源领域有投资的投资者。能源需求的下降可能会导致能源公司的业绩下滑，投资者需要谨慎对待这一风险。</p>
+        <div class="card-footer">
+          <span class="pub-meta">MarketWatch · 2026-07-25</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.marketwatch.com/story/oil-prices-may-fall-but-gasoline-prices-wont-look-at-the-trap-were-in-7f4c3738?mod=mw_rss_topstories" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.marketwatch.com/story/oil-prices-may-fall-but-gasoline-prices-wont-look-at-the-trap-were-in-7f4c3738?mod=mw_rss_topstories" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#ef4444"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#ef444415;color:#ef4444">⚠️ 风险警示</span>
+          <span class="sector-badge" style="background:#3b82f620;color:#3b82f6">科技</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$INTC</span></div>
+        <h2 class="card-title">英特尔的估值过高，投资者需要谨慎</h2>
+        <div class="why-box">💡 英特尔的估值过高，投资者需要谨慎</div>
+        <p class="analyst-take">英特尔的估值过高，投资者需要谨慎对待这一风险。虽然公司的业绩增长显著，但估值过高可能会导致股票价格下跌。投资者需要密切关注公司的业绩和估值，谨慎对待这一风险。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Seeking Alpha · 2026-07-26</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://seekingalpha.com/article/4925659-intel-grotesque-valuation?source=feed_all_articles" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://seekingalpha.com/article/4925659-intel-grotesque-valuation?source=feed_all_articles" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#10b981"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#10b98115;color:#10b981">📈 买入关注</span>
+          <span class="sector-badge" style="background:#3b82f620;color:#3b82f6">科技</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$ORCL</span></div>
+        <h2 class="card-title">奥拉克尔公司的股票值得关注，吉姆·克莱默表示</h2>
+        <div class="why-box">💡 奥拉克尔公司的股票值得关注，吉姆·克莱默表示</div>
+        <p class="analyst-take">奥拉克尔公司的股票值得关注，吉姆·克莱默表示。公司的业绩增长显著，尤其是在云计算领域。投资者可以考虑买入该公司的股票，尤其是在科技领域的投资者。奥拉克尔公司的增长前景看好，投资者可以关注这一领域的投资机会。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Yahoo Finance · 2026-07-25</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://finance.yahoo.com/markets/stocks/articles/oracle-corporation-nyse-orcl-stock-080707294.html" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://finance.yahoo.com/markets/stocks/articles/oracle-corporation-nyse-orcl-stock-080707294.html" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#ef4444"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#ef444415;color:#ef4444">⚠️ 风险警示</span>
+          <span class="sector-badge" style="background:#6b728020;color:#6b7280">宏观</span>
+        </div>
+        
+        <h2 class="card-title">澳大利亚总理将与特朗普讨论新关税问题</h2>
+        <div class="why-box">💡 澳大利亚总理将与特朗普讨论新关税问题</div>
+        <p class="analyst-take">澳大利亚总理将与特朗普讨论新关税问题，这可能会对全球贸易产生影响。投资者需要密切关注这一事件的发展，尤其是那些在国际贸易领域有投资的投资者。关税战可能会对全球经济产生负面影响，投资者需要谨慎对待这一风险。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Bloomberg Markets · 2026-07-26</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.bloomberg.com/news/articles/2026-07-26/australian-prime-minister-albanese-to-press-trump-on-new-tariffs" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.bloomberg.com/news/articles/2026-07-26/australian-prime-minister-albanese-to-press-trump-on-new-tariffs" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#10b981"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#10b98115;color:#10b981">📈 买入关注</span>
+          <span class="sector-badge" style="background:#f59e0b20;color:#f59e0b">能源</span>
+        </div>
+        
+        <h2 class="card-title">伊拉克将与叙利亚签署协议建设油管</h2>
+        <div class="why-box">💡 伊拉克将与叙利亚签署协议建设油管</div>
+        <p class="analyst-take">伊拉克将与叙利亚签署协议建设油管，这可能会对能源行业产生积极影响。投资者可以考虑买入相关股票，尤其是在能源领域的投资者。油管的建设可能会增加能源供应，推动能源行业的增长，投资者可以关注这一领域的投资机会。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Bloomberg Markets · 2026-07-25</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.bloomberg.com/news/articles/2026-07-25/iraq-to-sign-agreement-with-syria-on-building-of-oil-pipelines" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.bloomberg.com/news/articles/2026-07-25/iraq-to-sign-agreement-with-syria-on-building-of-oil-pipelines" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#10b981"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#10b98115;color:#10b981">📈 买入关注</span>
+          <span class="sector-badge" style="background:#f59e0b20;color:#f59e0b">能源</span>
+        </div>
+        
+        <h2 class="card-title">美国中部地区高温天气加剧，能源需求增加</h2>
+        <div class="why-box">💡 美国中部地区高温天气加剧，能源需求增加</div>
+        <p class="analyst-take">美国中部地区高温天气加剧，能源需求增加，这可能会对能源行业产生积极影响。投资者可以考虑买入相关股票，尤其是在能源领域的投资者。高温天气可能会增加能源供应，推动能源行业的增长，投资者可以关注这一领域的投资机会。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Bloomberg Markets · 2026-07-25</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.bloomberg.com/news/articles/2026-07-25/heat-bakes-central-us-raising-energy-demand-as-east-stays-cool" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.bloomberg.com/news/articles/2026-07-25/heat-bakes-central-us-raising-energy-demand-as-east-stays-cool" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+</main>
+
+<div class="disclaimer">
+  ⚠️ 本站内容由 AI 自动生成，仅供参考，不构成任何投资建议。<br>
+  股市有风险，投资需谨慎，请结合自身判断做出决策。<br>
+  更新于 11:12 · 每天 06:00 自动更新
+</div>
+</body>
+</html>
