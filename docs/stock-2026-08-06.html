@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+<title>股市分析日报 · 2026-08-06</title>
+<style>
+  :root {
+    --bg:#f8fafc; --surface:#fff; --text:#1e293b; --text2:#64748b;
+    --border:#e2e8f0; --radius:16px; --shadow:0 2px 12px rgba(0,0,0,0.06);
+    --max:480px;
+  }
+  @media(prefers-color-scheme:dark) {
+    :root { --bg:#0f172a; --surface:#1e293b; --text:#f1f5f9; --text2:#94a3b8; --border:#334155; --shadow:0 2px 12px rgba(0,0,0,0.3); }
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);min-height:100vh;padding-bottom:48px}
+
+  .header{background:var(--surface);border-bottom:1px solid var(--border);padding:18px 16px 14px;position:sticky;top:0;z-index:100;backdrop-filter:blur(12px)}
+  .header-inner{max-width:var(--max);margin:0 auto;display:flex;justify-content:space-between;align-items:center}
+  .logo{font-size:19px;font-weight:800;letter-spacing:-.3px}
+  .logo span{background:linear-gradient(135deg,#10b981,#3b82f6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+  .header-right{text-align:right;font-size:12px;color:var(--text2);line-height:1.6}
+  .header-date{font-weight:700;font-size:13px;color:var(--text)}
+
+  .summary-bar{max-width:var(--max);margin:0 auto;padding:10px 16px 0;display:flex;gap:8px;font-size:12px}
+  .sum-chip{padding:3px 10px;border-radius:20px;font-weight:600}
+
+  main{max-width:var(--max);margin:0 auto;padding:14px 12px;display:flex;flex-direction:column;gap:12px}
+
+  .card{background:var(--surface);border-radius:var(--radius);border:1px solid var(--border);box-shadow:var(--shadow);overflow:hidden}
+  .card-signal-bar{height:3px}
+  .card-body{padding:13px 15px 15px}
+  .card-top{display:flex;gap:6px;align-items:center;margin-bottom:8px;flex-wrap:wrap}
+  .signal-badge{font-size:11px;font-weight:700;padding:3px 9px;border-radius:10px;white-space:nowrap}
+  .sector-badge{font-size:10px;font-weight:600;padding:2px 8px;border-radius:8px}
+  .ticker-row{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:8px}
+  .ticker{font-size:12px;font-weight:800;color:#3b82f6;background:#3b82f610;border:1px solid #3b82f630;padding:2px 8px;border-radius:6px;font-family:monospace}
+  .card-title{font-size:15px;font-weight:700;line-height:1.45;margin-bottom:9px;letter-spacing:-.2px}
+  .why-box{font-size:12px;color:var(--text2);background:var(--bg);border-left:3px solid #f59e0b;padding:6px 10px;border-radius:0 8px 8px 0;margin-bottom:10px;line-height:1.5}
+  .analyst-take{font-size:13px;color:var(--text2);line-height:1.7;margin-bottom:12px}
+  .card-footer{display:flex;justify-content:space-between;align-items:center;gap:8px}
+  .pub-meta{font-size:11px;color:var(--text2);flex-shrink:0}
+  .card-links{display:flex;gap:6px;flex-shrink:0}
+  .btn-zh{font-size:12px;font-weight:600;color:#fff;background:#3b82f6;padding:4px 10px;border-radius:8px;text-decoration:none;white-space:nowrap}
+  .btn-zh:hover{background:#2563eb}
+  .btn-src{font-size:11px;color:var(--text2);text-decoration:none;padding:4px 7px;border-radius:6px;border:1px solid var(--border);white-space:nowrap}
+  .btn-src:hover{color:var(--text)}
+
+  .disclaimer{max-width:var(--max);margin:20px auto 0;padding:12px 16px;font-size:11px;color:var(--text2);text-align:center;border-top:1px solid var(--border);line-height:1.7}
+</style>
+</head>
+<body>
+<header class="header">
+  <div class="header-inner">
+    <div class="logo">📈 <span>股市分析日报</span></div>
+    <div class="header-right">
+      <div class="header-date">2026-08-06</div>
+      <div>今日精选 10 篇</div>
+    </div>
+  </div>
+  <div class="summary-bar">
+    <span class="sum-chip" style="background:#10b98115;color:#10b981">📈 买入关注 3</span>
+    <span class="sum-chip" style="background:#ef444415;color:#ef4444">⚠️ 风险警示 5</span>
+    <span class="sum-chip" style="background:#f59e0b15;color:#f59e0b">🔭 宏观观察 2</span>
+  </div>
+</header>
+
+<main>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#10b981"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#10b98115;color:#10b981">📈 买入关注</span>
+          <span class="sector-badge" style="background:#3b82f620;color:#3b82f6">科技</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$SFTBY</span></div>
+        <h2 class="card-title">SoftBank盈利超预期</h2>
+        <div class="why-box">💡 SoftBank的盈利超预期</div>
+        <p class="analyst-take">SoftBank的盈利超预期，主要得益于其在Intel的投资。这种情况表明SoftBank的投资策略正在取得成效，值得投资者关注。建议买入SoftBank的股票，因为其投资组合的多元化和公司的战略调整有望带来长期的增长。</p>
+        <div class="card-footer">
+          <span class="pub-meta">MarketWatch · 2026-08-06</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.marketwatch.com/story/softbank-earnings-exceed-expectations-even-without-an-openai-boost-this-u-s-chip-company-saved-the-day-2223845e?mod=mw_rss_topstories" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.marketwatch.com/story/softbank-earnings-exceed-expectations-even-without-an-openai-boost-this-u-s-chip-company-saved-the-day-2223845e?mod=mw_rss_topstories" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#ef4444"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#ef444415;color:#ef4444">⚠️ 风险警示</span>
+          <span class="sector-badge" style="background:#ec489920;color:#ec4899">消费</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$WBD</span></div>
+        <h2 class="card-title">Warner Bros. Discovery收入下滑</h2>
+        <div class="why-box">💡 Warner Bros. Discovery收入下滑</div>
+        <p class="analyst-take">Warner Bros. Discovery的收入下滑，主要是由于失去NBA权利和电影票房表现不佳。这种情况表明公司的业务面临挑战，投资者需要谨慎。建议观望Warner Bros. Discovery的股票，因为公司需要时间来调整其业务策略和恢复增长。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Bloomberg Markets · 2026-08-06</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.bloomberg.com/news/articles/2026-08-06/warner-bros-sales-fall-on-loss-of-nba-rights-weak-movie-lineup" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.bloomberg.com/news/articles/2026-08-06/warner-bros-sales-fall-on-loss-of-nba-rights-weak-movie-lineup" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#10b981"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#10b98115;color:#10b981">📈 买入关注</span>
+          <span class="sector-badge" style="background:#ec489920;color:#ec4899">消费</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$PTON</span></div>
+        <h2 class="card-title">Peloton实现年度净利润</h2>
+        <div class="why-box">💡 Peloton实现年度净利润</div>
+        <p class="analyst-take">Peloton实现年度净利润，表明公司的业务正在逐步恢复。尽管公司的销售增长仍然面临挑战，但其实现净利润是积极的信号。建议买入Peloton的股票，因为公司的业务调整和产品创新有望带来长期的增长。</p>
+        <div class="card-footer">
+          <span class="pub-meta">CNBC Earnings · 2026-08-06</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.cnbc.com/2026/08/06/peloton-pton-q4-2026-earnings.html" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.cnbc.com/2026/08/06/peloton-pton-q4-2026-earnings.html" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#f59e0b"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#f59e0b15;color:#f59e0b">🔭 宏观观察</span>
+          <span class="sector-badge" style="background:#6b728020;color:#6b7280">宏观</span>
+        </div>
+        
+        <h2 class="card-title">美国7月就业报告</h2>
+        <div class="why-box">💡 美国7月就业报告</div>
+        <p class="analyst-take">美国7月就业报告显示，私营部门就业增长放缓。这种情况表明经济增长可能面临挑战，投资者需要关注经济数据的变化。建议观察经济数据的变化，并根据情况调整投资策略。</p>
+        <div class="card-footer">
+          <span class="pub-meta">CNBC Markets · 2026-08-05</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.cnbc.com/2026/08/05/private-companies-added-just-44000-workers-in-july-below-expectations-adp-reports.html" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.cnbc.com/2026/08/05/private-companies-added-just-44000-workers-in-july-below-expectations-adp-reports.html" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#f59e0b"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#f59e0b15;color:#f59e0b">🔭 宏观观察</span>
+          <span class="sector-badge" style="background:#6b728020;color:#6b7280">宏观</span>
+        </div>
+        
+        <h2 class="card-title">欧洲干旱影响经济</h2>
+        <div class="why-box">💡 欧洲干旱影响经济</div>
+        <p class="analyst-take">欧洲干旱对经济产生了影响，尤其是能源和货运行业。这种情况表明投资者需要关注气候变化对经济的影响。建议观察经济数据的变化，并根据情况调整投资策略。</p>
+        <div class="card-footer">
+          <span class="pub-meta">CNBC Markets · 2026-08-05</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.cnbc.com/2026/08/05/drought-rhine-danube-water-levels-economy.html" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.cnbc.com/2026/08/05/drought-rhine-danube-water-levels-economy.html" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#ef4444"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#ef444415;color:#ef4444">⚠️ 风险警示</span>
+          <span class="sector-badge" style="background:#ec489920;color:#ec4899">消费</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$PLNT</span></div>
+        <h2 class="card-title">Planet Fitness降低盈利预期</h2>
+        <div class="why-box">💡 Planet Fitness降低盈利预期</div>
+        <p class="analyst-take">Planet Fitness降低盈利预期，主要是由于会员增长放缓。这种情况表明公司的业务面临挑战，投资者需要谨慎。建议观望Planet Fitness的股票，因为公司需要时间来调整其业务策略和恢复增长。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Bloomberg Markets · 2026-08-06</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.bloomberg.com/news/articles/2026-08-06/planet-fitness-cuts-outlook-on-sluggish-member-sign-ups" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.bloomberg.com/news/articles/2026-08-06/planet-fitness-cuts-outlook-on-sluggish-member-sign-ups" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#ef4444"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#ef444415;color:#ef4444">⚠️ 风险警示</span>
+          <span class="sector-badge" style="background:#ec489920;color:#ec4899">消费</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$SIX</span></div>
+        <h2 class="card-title">Six Flags收入和出席率低于预期</h2>
+        <div class="why-box">💡 Six Flags收入和出席率低于预期</div>
+        <p class="analyst-take">Six Flags的收入和出席率低于预期，表明公司的业务面临挑战。这种情况需要投资者谨慎，建议观望Six Flags的股票，因为公司需要时间来调整其业务策略和恢复增长。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Bloomberg Markets · 2026-08-06</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.bloomberg.com/news/articles/2026-08-06/six-flags-shares-slide-after-attendance-revenue-miss-estimates" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.bloomberg.com/news/articles/2026-08-06/six-flags-shares-slide-after-attendance-revenue-miss-estimates" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#ef4444"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#ef444415;color:#ef4444">⚠️ 风险警示</span>
+          <span class="sector-badge" style="background:#ec489920;color:#ec4899">消费</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$CELH</span></div>
+        <h2 class="card-title">Celsius Holdings收入低于预期</h2>
+        <div class="why-box">💡 Celsius Holdings收入低于预期</div>
+        <p class="analyst-take">Celsius Holdings的收入低于预期，主要是由于其品牌销售下滑。这种情况表明公司的业务面临挑战，投资者需要谨慎。建议观望Celsius Holdings的股票，因为公司需要时间来调整其业务策略和恢复增长。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Bloomberg Markets · 2026-08-06</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.bloomberg.com/news/articles/2026-08-06/celsius-shares-slump-as-namesake-brand-sales-tumble" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.bloomberg.com/news/articles/2026-08-06/celsius-shares-slump-as-namesake-brand-sales-tumble" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#ef4444"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#ef444415;color:#ef4444">⚠️ 风险警示</span>
+          <span class="sector-badge" style="background:#8b5cf620;color:#8b5cf6">金融</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$BX</span></div>
+        <h2 class="card-title">Blackstone BDC盈利大幅下降</h2>
+        <div class="why-box">💡 Blackstone BDC盈利大幅下降</div>
+        <p class="analyst-take">Blackstone BDC的盈利大幅下降，主要是由于其持有资产价值下降。这种情况表明公司的业务面临挑战，投资者需要谨慎。建议观望Blackstone BDC的股票，因为公司需要时间来调整其投资策略和恢复增长。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Bloomberg Markets · 2026-08-06</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.bloomberg.com/news/articles/2026-08-06/blackstone-bdc-profit-drops-94-while-loan-performance-steadies" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.bloomberg.com/news/articles/2026-08-06/blackstone-bdc-profit-drops-94-while-loan-performance-steadies" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-signal-bar" style="background:#10b981"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="signal-badge" style="background:#10b98115;color:#10b981">📈 买入关注</span>
+          <span class="sector-badge" style="background:#8b5cf620;color:#8b5cf6">金融</span>
+        </div>
+        <div class="ticker-row"><span class="ticker">$SSREY</span></div>
+        <h2 class="card-title">Swiss Re盈利超预期</h2>
+        <div class="why-box">💡 Swiss Re盈利超预期</div>
+        <p class="analyst-take">Swiss Re的盈利超预期，主要是由于公司的成本控制和业务调整。这种情况表明Swiss Re的业务正在逐步恢复，值得投资者关注。建议买入Swiss Re的股票，因为公司的业务调整和成本控制有望带来长期的增长。</p>
+        <div class="card-footer">
+          <span class="pub-meta">Bloomberg Markets · 2026-08-06</span>
+          <div class="card-links">
+            <a class="btn-zh" href="https://translate.google.com/translate?sl=auto&tl=zh-CN&u=https://www.bloomberg.com/news/articles/2026-08-06/swiss-re-profit-beats-estimates-as-re-insurer-boosts-cost-cuts" target="_blank">🌐 中文阅读</a>
+            <a class="btn-src" href="https://www.bloomberg.com/news/articles/2026-08-06/swiss-re-profit-beats-estimates-as-re-insurer-boosts-cost-cuts" target="_blank">原文</a>
+          </div>
+        </div>
+      </div>
+    </article>
+</main>
+
+<div class="disclaimer">
+  ⚠️ 本站内容由 AI 自动生成，仅供参考，不构成任何投资建议。<br>
+  股市有风险，投资需谨慎，请结合自身判断做出决策。<br>
+  更新于 11:56 · 每天 06:00 自动更新
+</div>
+</body>
+</html>
